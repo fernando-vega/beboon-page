@@ -1,0 +1,227 @@
+.helpBody {
+  margin: 70vh auto $-padding * 4;
+  width: 100%;
+
+  &__card {
+    background-color: $-orange-light;
+    margin: auto;
+    max-width: 80vw;
+    padding: $-padding * 4 $-padding * 4 0;
+    position: relative;
+    width: 80vw;
+
+    h3 {
+      color: $-orange;
+      font-size: 2.2rem;
+      margin-bottom: 30vw;
+      text-align: center;
+    }
+    h2 {
+      color: $-orange;
+      font-size: 2.2rem;
+      margin: $-padding * 2 0;
+    }
+
+    &__bottom {
+      background-color: $-orange;
+      max-height: 260px;
+      margin: 0 -60px;
+      padding: $-padding * 4;
+      p {
+        color: $-white;
+        font-size: 1.5rem;
+      }
+      img {
+        margin-top: -13vw;
+        position: relative;
+        width: 90%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__imageOffset {
+    margin-top: 200px;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.offsetGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  margin-bottom: $-padding * 4;
+  transform: translateY(-250px);
+  position: relative;
+  z-index: 2;
+}
+
+.leftSection {
+  grid-area: 1 / 1 / 5 / 4;
+}
+.rightSection {
+  grid-area: 2 / 3 / 6 / 6;
+}
+
+.cardText {
+  background-color: $-orange-light;
+  padding: $-padding * 2 $-padding * 4;
+  height: max-content;
+  color: $-orange;
+
+  h3 {
+    font-size: 2.2rem;
+    margin: $-padding 0;
+  }
+
+  p {
+    padding: $-padding 0;
+  }
+
+  ul {
+    list-style-image: url("../../public/assets/svg/line-list.svg");
+    padding-left: $-padding;
+    li {
+      padding: $-padding 0 0 $-padding / 2;
+    }
+  }
+  &.rightSection {
+    padding-left: 40%;
+  }
+}
+
+.cardImg {
+  position: relative;
+  height: max-content;
+  &__background {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  &__line {
+    top: 50%;
+    width: 80%;
+    position: absolute;
+    transform: translateY(-50%);
+    &.lineLeft {
+      left: 0;
+    }
+
+    &.lineRight {
+      right: 0;
+    }
+  }
+
+  &.lastSection {
+    margin-bottom: -25%;
+  }
+}
+
+.galleryEat {
+  background-color: $-orange-light;
+  border-radius: 5px;
+  margin-top: -150px;
+  padding: $-padding * 4;
+  position: relative;
+
+  &__itemWrap {
+    padding: $-padding;
+    .lineOffset {
+      background: url("../../public/assets/svg/short-line.svg") center no-repeat;
+      height: 10px;
+      position: absolute;
+      width: 100px;
+      right: -25px;
+      transform: translateY(100px);
+    }
+    &:nth-child(1) {
+      .lineOffset {
+        left: -25px;
+        transform: translateY(50px);
+      }
+    }
+    &:nth-child(2) {
+      .lineOffset {
+        left: -25px;
+        transform: translateY(200px);
+      }
+    }
+    &:nth-child(3) {
+      .lineOffset {
+        right: -25px;
+        transform: translateY(100px);
+      }
+    }
+    &:nth-child(4) {
+      .lineOffset {
+        right: -25px;
+        transform: translateY(50px);
+      }
+    }
+    &:nth-child(5) {
+      .lineOffset {
+        right: -25px;
+        transform: translateY(150px);
+      }
+    }
+    &:nth-child(6) {
+      .lineOffset {
+        right: -25px;
+        transform: translateY(200px);
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    &::after {
+      background-color: transparent;
+      content: "";
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      width: 0;
+    }
+
+    &:hover {
+      &::after {
+        background-color: rgba($-orange, 0.4);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    p {
+      bottom: $-padding * 2;
+      color: $-white;
+      font-size: 1.8rem;
+      left: $-padding * 2;
+      position: absolute;
+      width: 50%;
+    }
+    .plus {
+      background: url("../../public/assets/svg/plus.svg") center no-repeat;
+      bottom: $-padding;
+      height: 30px;
+      position: absolute;
+      right: $-padding;
+      width: 30px;
+    }
+  }
+}

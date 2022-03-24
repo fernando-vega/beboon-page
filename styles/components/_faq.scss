@@ -1,0 +1,63 @@
+.faq {
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  height: auto;
+}
+
+.faq-container {
+  width: 100%;
+}
+
+.faq-line {
+  background: url('../../public/assets/svg/line-list.svg') center no-repeat;
+  background-size: 30px;
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  top: -10px;
+}
+
+.faq-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-top: $-padding;
+  padding: $-padding;
+  position: relative;
+  width: 100%;
+}
+
+.faq-label-text {
+  color: $-orange;
+  font-size: 1.4rem;
+}
+
+.faq-label-icon {
+  color: $-purple;
+  font-size: 1.2rem;
+  padding: 0 0 0 $-padding * 2;
+}
+
+.faq-answer {
+  transition: 0.3s ease;
+  margin-top: $-padding;
+  height: 0;
+  color: $-orange;
+  overflow: hidden;
+}
+
+.faq-answer-content {
+  padding: 10px 0 10px $-padding;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.active {
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

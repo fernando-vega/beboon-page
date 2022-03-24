@@ -1,0 +1,33 @@
+/* Config */
+@import './config/animations';
+@import './config/grid';
+@import './config/reset';
+@import './config/variables';
+
+/* Components */
+@import './components/components';
+
+body {
+  font-family: $-fontMuli;
+}
+
+.container {
+  max-width: $-max-width;
+}
+
+.orangeSection {
+  background-color: $-orange;
+  height: max-content;
+  margin-top: 250px;
+  position: relative;
+  width: 100vw;
+  &::after {
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    bottom: 0;
+    z-index: 1;
+  }
+}

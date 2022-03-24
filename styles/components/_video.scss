@@ -1,0 +1,88 @@
+.video {
+  position: relative;
+  padding-bottom: 100px;
+  &::after {
+    background-color: $-white;
+    bottom: 0;
+    content: "";
+    height: 70%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__item {
+    padding: $-padding;
+    margin: $-padding 0 $-padding * 2 0;
+
+    &__wrapCover {
+      display: grid;
+      position: relative;
+
+      .playBtn {
+        align-self: center;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 60px;
+        justify-self: center;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        width: 60px;
+        z-index: 10;
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 25px solid $-orange;
+          border-right: 15px solid transparent;
+          border-left: 15px solid transparent;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-38%, -50%) rotate(-90deg);
+        }
+
+        &:hover {
+          box-shadow: $-shadow;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    h3 {
+      color: $-orange;
+      font-size: 2.2rem;
+      margin: $-padding 0;
+      width: 70%;
+    }
+
+    &__btnWhite {
+      background-color: $-orange-light;
+      border-radius: 5px 0 0 5px;
+      color: $-orange;
+      cursor: pointer;
+      padding: 5px 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: $-shadow;
+      }
+    }
+
+    &__btnOrange {
+      background-color: $-orange;
+      border-radius: 0 5px 5px 0;
+      color: $-white;
+      cursor: pointer;
+      margin-left: -4px;
+      padding: 5px 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: $-shadow;
+      }
+    }
+  }
+}

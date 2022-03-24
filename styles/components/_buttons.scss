@@ -1,0 +1,28 @@
+.btnPrimary {
+  border-radius: 5px;
+  color: $-orange;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: $-padding * 2 0;
+  padding: $-padding / 2 $-padding * 2;
+  transition: all .3s ease-in-out;
+
+  &.btnWhite {
+    background-color: $-white;
+    color: $-orange;
+
+    &__border {
+      border: 1px solid $-orange;
+    }
+  }
+
+  &.btnOrange {
+    background-color: $-orange;
+    color: $-white;
+  }
+
+  &:hover {
+    box-shadow: $-shadow;
+  }
+}
