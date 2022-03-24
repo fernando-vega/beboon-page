@@ -1,3 +1,3 @@
 # beboon-page
 Web page layout
- Link:
+ Link: https://fernando-vega.github.io/beboon-page/
