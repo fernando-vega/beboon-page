@@ -40,6 +40,7 @@
     }
     p {
       padding: $-padding 0 0;
+      font-style: italic;
     }
   }
 }
@@ -71,10 +72,6 @@
   }
 }
 
-.animationRotate {
-  animation: flipX 40s linear infinite forwards;
-}
-
 .bannerNewsletter {
   background: url('../../public/images/img_17.png') no-repeat center;
   background-size: cover;
@@ -85,8 +82,7 @@
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 300;
     margin: $-padding auto;
-    width: 30%;
+    width: 40%;
   }
 }

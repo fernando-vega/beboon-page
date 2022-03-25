@@ -1,0 +1,45 @@
+.mainFooter {
+  background-color: $-orange;
+  color: $-white;
+  padding: $-padding * 6 $-padding;
+  position: relative;
+
+  &__menu {
+    li {
+      padding: $-padding;
+    }
+  }
+
+  &__line {
+    img {
+      width: 10px;
+    }
+  }
+  &__logo {
+    margin-top: $-padding * 4;
+    img {
+      width: 100px;
+    }
+  }
+
+  &__infoContact {
+    h3 {
+      font-size: 1.6rem;
+      margin: $-padding 0;
+    }
+    h5 {
+      margin: $-padding 0;
+      width: 50%;
+    }
+  }
+
+  &::after {
+    content: '';
+    background: url('../../public/assets/svg/line-footer.svg') center no-repeat;
+    position: absolute;
+    height: 100px;
+    width: 30%;
+    right: 0;
+    top: 80px;
+  }
+}
