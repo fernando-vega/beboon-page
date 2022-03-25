@@ -86,6 +86,8 @@
     font-style: italic;
     list-style-image: url("../../public/assets/svg/line-list.svg");
     padding-left: $-padding;
+    width: 60%;
+
     li {
       padding: $-padding 0 0 $-padding / 2;
     }
