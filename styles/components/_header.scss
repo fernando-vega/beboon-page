@@ -17,9 +17,24 @@
     &__item {
       padding: 8px $-padding * 2;
 
-      a {
+      .itemMenu {
         color: $-white;
-        font-size: 1.175rem;
+        position: relative;
+        display: inline-block;
+        padding: .4em 1em;
+        overflow: hidden;
+        border: .1em solid transparent;
+        text-decoration: none;
+        transition: border-color .2s ease-out;
+        &::before {
+          position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+          padding: .5em 1em;
+          background: transparent;
+          color: $-orange;
+        }
+        &:hover, &:focus, &.is-active {
+          border-color: $-orange;
+        }
       }
     }
 
@@ -27,6 +42,12 @@
       height: 30px;
       width: 30px;
     }
+  }
+  .numberHeader{
+    color: $-white;
+    padding: $-padding $-padding * 2 0;
+    position: relative;
+    z-index: 1;
   }
 }
 .headerBackground {
@@ -37,6 +58,22 @@
   position: absolute;
   top: 0;
   width: 100%;
+  &.membresia {
+    background: url('../../public/images/m_img_1.png') no-repeat center;
+    background-size: cover;
+  }
+  &.cursos {
+    background: url('../../public/images/c_img_1.png') no-repeat center;
+    background-size: cover;
+  }
+  &.programas {
+    background: url('../../public/images/p_img_1.png') no-repeat center;
+    background-size: cover;
+  }
+  &.asesorias {
+    background: url('../../public/images/a_img_1.png') no-repeat center;
+    background-size: cover;
+  }
 
   &__line {
     left: 0px;
@@ -51,10 +88,18 @@
     margin: auto;
     max-width: $-max-width;
     position: absolute;
-    right: 10vw;
+    right: 15vw;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+
+    &.leftSection {
+      left: 15vw;
+      right: initial;
+      .img {
+        transform: rotateY(180deg);
+      }
+    }
 
     &__title {
       font-size: 2.2rem;

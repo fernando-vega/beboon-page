@@ -70,6 +70,10 @@
       margin-top: $-padding;
     }
   }
+  &.asesorias {
+    background: url('../../public/images/a_img_8.png') no-repeat center;
+    background-size: cover;
+  }
 }
 
 .bannerNewsletter {

@@ -95,6 +95,27 @@
   &.rightSection {
     padding-left: 40%;
   }
+  &.bgWhite{
+    background-color: #fff !important;
+    h1 {
+      background-color: $-orange;
+      color: $-white;
+      font-size: 2rem;
+      padding: $-padding * 3.45 $-padding $-padding 40%;
+      width: 58%;
+    }
+    .content {
+      width: 60%;
+      padding-left: 40%;
+      p{
+        color: $-orange;
+        font-size: 1.5rem;
+      }
+    }
+    &.rightSection {
+      padding: 0;
+    }
+  }
 }
 
 .cardImg {
@@ -280,5 +301,117 @@
         }
       }
     }
+  }
+}
+
+.what-content {
+  margin: 90vh auto $-padding * 4;
+  padding-bottom: $-padding * 10;
+  position: relative;
+  &::before {
+    content: '';
+    background: url('../../public/assets/svg/m_line_1.svg') no-repeat center;
+    background-size: cover;
+    height: 200px;
+    left: -80px;
+    top: 100px;
+    position: absolute;
+    width: 25vw;
+    z-index: 9;
+  }
+  &::after {
+    content: '';
+    background: url('../../public/images/m_img_2.png') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    transform: translateY(-300px);
+    width: 100%;
+    z-index: -1;
+  }
+  .itemsContent {
+    background-color: $-orange-light;
+    padding: $-padding * 4 $-padding * 8;
+    &__item {
+      padding: $-padding * 2 $-padding;
+      h2 {
+        color: $-orange;
+        font-size: 2rem;
+        padding-left: 60px;
+        text-align: start;
+        width: 100px;
+      }
+      img {
+        width: 100px;
+      }
+      p{
+        color: $-orange;
+        margin: auto;
+        padding: $-padding 0;
+        font-style: italic;
+        width: 130px;
+      }
+      small {
+        color: $-orange;
+        line-height: 0.75rem;
+        font-size: 0.75rem;
+        font-style: italic;
+      }
+    }
+  }
+  &.cursos {
+    margin-top: -265px;
+  }
+  &.programas {
+    margin-top: -265px;
+    &::after {
+      height: 100vh;
+      transform: translateY(-90vh);
+    }
+  }
+}
+
+.imageText {
+  position: relative;
+  z-index: 2;
+  &__row {
+    margin-top: $-padding * 4;
+  }
+  &__text {
+    color: $-white;
+    padding-left: $-padding * 8;
+    h2 {
+      font-size: 2rem;
+      width: 60%;
+    }
+    p{
+      font-style: italic;
+      margin-top: $-padding;
+      width: 60%;
+    }
+  }
+  .orange {
+    color: $-orange;
+  }
+}
+
+.and-more {
+  background: $-orange-light;
+  background-size: cover;
+  color: $-orange;
+  height: max-content;
+  margin-top: 300px;
+  min-height: 400px;
+  padding: $-padding * 4 0;
+  img {
+    padding-left: $-padding * 4;
+    width: 60%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    padding: $-padding 0;
+    width: 300px;
   }
 }
