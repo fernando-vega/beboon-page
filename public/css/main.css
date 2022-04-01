@@ -1980,7 +1980,7 @@ meter {
   margin: auto;
   max-width: 1440px;
   position: absolute;
-  right: 25vw;
+  right: 30vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1988,7 +1988,7 @@ meter {
 }
 
 .headerBackground__content.leftSection {
-  left: 25vw;
+  left: 30vw;
   right: initial;
 }
 

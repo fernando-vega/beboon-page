@@ -88,13 +88,13 @@
     margin: auto;
     max-width: $-max-width;
     position: absolute;
-    right: 25vw;
+    right: 30vw;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
 
     &.leftSection {
-      left: 25vw;
+      left: 30vw;
       right: initial;
       .img {
         transform: rotateY(180deg);
