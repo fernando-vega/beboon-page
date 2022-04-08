@@ -2460,11 +2460,17 @@ meter {
 
 .slider {
   width: calc(100% - 50px);
-  height: 85vh;
+  height: 60vh;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   z-index: 4;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    height: 85vh;
+  }
 }
 
 .slide-wrap {
