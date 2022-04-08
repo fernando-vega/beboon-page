@@ -1,6 +1,6 @@
 .mainHeader {
   width: 100%;
-  &__logo{
+  &__logo {
     &__img {
       height: auto;
       width: 80px;
@@ -8,31 +8,54 @@
   }
 
   &__nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    height: 100%;
+    left: -500%;
     margin: auto;
     max-width: $-max-width;
     padding: $-padding;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+
+    @include for-notebook-landscape-up {
+      background-color: transparent;
+      backdrop-filter: none;
+      position: relative;
+      left: auto;
+    }
+
+    &.is_active {
+      left: 0;
+    }
 
     &__item {
-      padding: 8px $-padding * 2;
+      padding: 8px $-padding;
 
       .itemMenu {
         color: $-white;
         position: relative;
         display: inline-block;
-        padding: .4em 1em;
+        padding: 0.4em 1em;
         overflow: hidden;
-        border: .1em solid transparent;
+        border: 0.1em solid transparent;
         text-decoration: none;
-        transition: border-color .2s ease-out;
+        transition: border-color 0.2s ease-out;
         &::before {
-          position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-          padding: .5em 1em;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 0.5em 1em;
           background: transparent;
           color: $-orange;
         }
-        &:hover, &:focus, &.is-active {
+        &:hover,
+        &:focus,
+        &.is-active {
           border-color: $-orange;
         }
       }
@@ -43,7 +66,7 @@
       width: 30px;
     }
   }
-  .numberHeader{
+  .numberHeader {
     color: $-white;
     padding: $-padding $-padding * 2 0;
     position: relative;
@@ -51,7 +74,7 @@
   }
 }
 .headerBackground {
-  background: url('../../public/images/img_1.png') no-repeat center;
+  background: url("../../public/images/img_1.png") no-repeat center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -59,19 +82,40 @@
   top: 0;
   width: 100%;
   &.membresia {
-    background: url('../../public/images/m_img_1.png') no-repeat center;
+    background: url("../../public/images/m_img_1.png") no-repeat center;
     background-size: cover;
   }
   &.cursos {
-    background: url('../../public/images/c_img_1.png') no-repeat center;
+    background: url("../../public/images/c_img_1.png") no-repeat center;
     background-size: cover;
   }
   &.programas {
-    background: url('../../public/images/p_img_1.png') no-repeat center;
+    background: url("../../public/images/p_img_1.png") no-repeat center;
     background-size: cover;
   }
   &.asesorias {
-    background: url('../../public/images/a_img_1.png') no-repeat center;
+    background: url("../../public/images/a_img_1.png") no-repeat center;
+    background-size: cover;
+  }
+  &.beboon {
+    background: url("../../public/images/bb_img_1.png") no-repeat center;
+    background-size: cover;
+    &::before {
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      content: "";
+      left: 0;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &.blog {
+    background: url("../../public/images/blog_img_1.png") no-repeat center;
     background-size: cover;
   }
 
@@ -94,8 +138,12 @@
     width: 100%;
 
     &.leftSection {
-      left: 20vw;
+      left: 4vw;
       right: initial;
+
+      @include for-notebook-landscape-up {
+        left: 16vw;
+      }
       .img {
         transform: rotateY(180deg);
       }
@@ -107,6 +155,7 @@
 
     &__text {
       font-size: 1rem;
+      width: 90%;
     }
 
     img {
@@ -115,4 +164,50 @@
       width: 50%;
     }
   }
+}
+
+.hamburger {
+  position: fixed;
+  background-color: $-orange;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 25px;
+  padding: 20px 20px;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  z-index: 1002;
+  cursor: pointer;
+  user-select: none;
+  @include for-notebook-landscape-up {
+    display: none;
+  }
+}
+.hamburger.is-active {
+  background-color: none;
+}
+._layer {
+  background: $-white;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  width: 28px;
+  height: 4px;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top {
+  transform: translateY(-100%);
+}
+.hamburger:hover .-bottom {
+  transform: translateY(100%);
+}
+.hamburger.is-active .-top {
+  transform: translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid {
+  opacity: 0;
+}
+.hamburger.is-active .-bottom {
+  transform: translateY(-200%) rotate(135deg) !important;
 }

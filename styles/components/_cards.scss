@@ -24,53 +24,85 @@
 
     &__bottom {
       background-color: $-orange;
-      max-height: 260px;
       margin: 0 -60px;
-      padding: $-padding * 4;
+      padding: $-padding * 4 $-padding;
+
+      @include for-tablet-portrait-up {
+        max-height: 260px;
+        padding: $-padding * 4;
+      }
+
       p {
         color: $-white;
         font-size: 1.5rem;
         font-style: italic;
       }
       img {
-        margin-top: -13vw;
         position: relative;
-        width: 90%;
+        width: 100%;
         max-width: 100%;
+
+        @include for-tablet-portrait-up {
+          margin-top: -13vw;
+          width: 90%;
+        }
       }
     }
   }
 
   &__imageOffset {
-    margin-top: 200px;
+    margin-top: 180px;
     position: absolute;
     z-index: 2;
+
+    @include for-tablet-portrait-up {
+      margin-top: 200px;
+    }
   }
 }
 
 .offsetGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   gap: 0px 0px;
   margin-bottom: $-padding * 4;
-  transform: translateY(-250px);
+  transform: translateY(0px);
   position: relative;
   z-index: 2;
+
+  @include for-tablet-portrait-up{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @include for-notebook-landscape-up {
+    transform: translateY(-250px);
+  }
 }
 
 .leftSection {
-  grid-area: 1 / 1 / 5 / 4;
+  grid-area: 1 / 1 / 2 / 2;
+  @include for-tablet-portrait-up {
+    grid-area: 1 / 1 / 5 / 4;
+  }
 }
 .rightSection {
-  grid-area: 2 / 3 / 6 / 6;
+  grid-area: 2 / 1 / 3 / 2;
+  @include for-tablet-portrait-up {
+    grid-area: 2 / 3 / 6 / 6;
+  }
 }
 
 .cardText {
   background-color: $-orange-light;
-  padding: $-padding * 2 $-padding * 4;
+  padding: $-padding;
   height: max-content;
   color: $-orange;
+
+  @include for-tablet-portrait-up {
+    padding: $-padding * 2 $-padding * 4;
+  }
 
   h3 {
     font-size: 2.2rem;
@@ -93,21 +125,26 @@
     }
   }
   &.rightSection {
-    padding-left: 40%;
+    @include for-tablet-portrait-up {
+      padding-left: 40%;
+    }
   }
-  &.bgWhite{
+  &.bgWhite {
     background-color: #fff !important;
     h1 {
       background-color: $-orange;
       color: $-white;
       font-size: 2rem;
-      padding: $-padding * 3.45 $-padding $-padding 40%;
-      width: 58%;
+      padding: $-padding * 2;
+      @include for-tablet-portrait-up {
+        padding: $-padding * 3.45 $-padding $-padding 40%;
+        width: 58%;
+      }
     }
     .content {
       width: 60%;
       padding-left: 40%;
-      p{
+      p {
         color: $-orange;
         font-size: 1.5rem;
       }
@@ -149,8 +186,11 @@
   background-color: $-orange-light;
   border-radius: 5px;
   margin-top: -150px;
-  padding: $-padding * 4;
   position: relative;
+
+  @include for-notebook-landscape-up {
+    padding: $-padding * 4;
+  }
 
   &__itemWrap {
     padding: $-padding;
@@ -260,7 +300,7 @@
   z-index: 1;
   &::after {
     background-color: $-white;
-    content: '';
+    content: "";
     height: 50%;
     position: absolute;
     bottom: 0;
@@ -268,12 +308,17 @@
   }
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 0px 0px;
+    @include for-notebook-landscape-up {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
     .image {
       grid-area: 1 / 1 / 4 / 5;
       z-index: 2;
+
       img {
         object-fit: cover;
         height: 100%;
@@ -282,11 +327,16 @@
     }
     .text {
       background-color: $-orange;
-      grid-area: 2 / 4 / 5 / 10;
-      z-index: 1;
-      padding-left: 25%;
+      grid-area: 2 / 1 / 3 / 2;
+      padding: 0 30px;
       position: relative;
-      p{
+      z-index: 2;
+      @include for-notebook-landscape-up {
+        grid-area: 2 / 4 / 5 / 10;
+        padding-left: 25%;
+        z-index: 1;
+      }
+      p {
         color: $-white;
         display: flex;
         flex-direction: column;
@@ -294,7 +344,10 @@
         font-weight: 700;
         height: 100%;
         justify-content: center;
-        width: 60%;
+        width: 100%;
+        @include for-notebook-landscape-up {
+          width: 60%;
+        }
         small {
           font-size: 1rem;
           margin-top: $-padding;
@@ -305,12 +358,13 @@
 }
 
 .what-content {
-  margin: 90vh auto $-padding * 4;
   padding-bottom: $-padding * 10;
   position: relative;
+  margin: 90vh auto $-padding * 4;
+
   &::before {
-    content: '';
-    background: url('../../public/assets/svg/m_line_1.svg') no-repeat center;
+    content: "";
+    background: url("../../public/assets/svg/m_line_1.svg") no-repeat center;
     background-size: contain;
     height: 200px;
     left: -80px;
@@ -320,8 +374,8 @@
     z-index: 9;
   }
   &::after {
-    content: '';
-    background: url('../../public/images/m_img_2.png') no-repeat center;
+    content: "";
+    background: url("../../public/images/m_img_2.png") no-repeat center;
     background-size: cover;
     height: 400px;
     position: absolute;
@@ -344,7 +398,7 @@
       img {
         width: 100px;
       }
-      p{
+      p {
         color: $-orange;
         margin: auto;
         padding: $-padding 0;
@@ -360,10 +414,16 @@
     }
   }
   &.cursos {
-    margin-top: -265px;
+    margin-top: 0;
+    @include for-notebook-landscape-up {
+      margin-top: -265px;
+    }
   }
   &.programas {
-    margin-top: -265px;
+    margin-top: 0;
+    @include for-notebook-landscape-up {
+      margin-top: -265px;
+    }
     &::after {
       height: 100vh;
       transform: translateY(-90vh);
@@ -375,23 +435,34 @@
   position: relative;
   z-index: 2;
   &__row {
-    margin-top: $-padding * 4;
+    @include for-notebook-landscape-up {
+      margin-top: $-padding * 4;
+    }
   }
   &__text {
     color: $-white;
-    padding-left: $-padding * 8;
+    padding: $-padding;
+    @include for-notebook-landscape-up {
+      padding-left: $-padding * 8;
+    }
     h2 {
       font-size: 2rem;
-      width: 60%;
+      @include for-notebook-landscape-up {
+        width: 60%;
+      }
     }
-    p{
+    p {
       font-style: italic;
       margin-top: $-padding;
-      width: 60%;
+      @include for-notebook-landscape-up {
+        width: 60%;
+      }
     }
   }
   .orange {
-    color: $-orange;
+    @include for-notebook-landscape-up {
+      color: $-orange;
+    }
   }
 }
 
@@ -400,9 +471,11 @@
   background-size: cover;
   color: $-orange;
   height: max-content;
-  margin-top: 300px;
   min-height: 400px;
-  padding: $-padding * 4 0;
+  padding: $-padding * 4 $-padding;
+  @include for-notebook-landscape-up {
+    margin-top: 300px;
+  }
   img {
     padding-left: $-padding * 4;
     width: 60%;

@@ -10,6 +10,20 @@ function init() {
         item.nextElementSibling.classList.toggle("active");
       })
   );
+
+  // selector
+  var menu = document.querySelector(".hamburger");
+
+  // method
+  function toggleMenu(event) {
+    this.classList.toggle("is-active");
+    document.querySelector(".mainHeader__nav").classList.toggle("is_active");
+    document.querySelector("body").classList.toggle("isActive");
+    event.preventDefault();
+  }
+
+  // event
+  menu.addEventListener("click", toggleMenu, false);
 }
 
 let arrowIconLeft =

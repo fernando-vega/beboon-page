@@ -25,7 +25,7 @@
   margin-top: $-padding;
   padding: $-padding;
   position: relative;
-  width: 100%;
+  width: calc(100% - 30px);
 }
 
 .faq-label-text {

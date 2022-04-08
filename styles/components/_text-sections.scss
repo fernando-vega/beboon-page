@@ -1,7 +1,10 @@
 .infoSection {
   color: $-orange;
-  padding: $-padding * 4 0;
-  margin: 100px 0;
+
+  @include for-tablet-portrait-up {
+    padding: $-padding * 4 0;
+    margin: 100px 0;
+  }
 
   &__text {
     padding: $-padding;
@@ -28,6 +31,9 @@
     }
   }
   &.asesorias {
-    margin-top: 85vh;
+    margin-top: 100vh;
+    @include for-notebook-landscape-up {
+      margin-top: 85vh;
+    }
   }
 }

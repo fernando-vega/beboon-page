@@ -1,31 +1,31 @@
 @import './variables';
 
 @mixin for-phone-only {
-  @media ($-phone) {
+  @media (max-width: $-mobile) {
     @content;
   }
 }
 
 @mixin for-tablet-portrait-up {
-  @media ($-tablet) {
+  @media (min-width: $-tablet) {
     @content;
   }
 }
 
-@mixin for-tablet-landscape-up {
-  @media ($-mediumDesktop) {
+@mixin for-notebook-landscape-up {
+  @media (min-width: $-notebook) {
     @content;
   }
 }
 
 @mixin for-desktop-up {
-  @media ($-desktop) {
+  @media (min-width: $-large-screen) {
     @content;
   }
 }
 
 @mixin for-big-desktop-up {
-  @media ($-xlarge-screen) {
+  @media (min-width: $-extra-large-screen) {
     @content;
   }
 }

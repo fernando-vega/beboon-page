@@ -1,9 +1,14 @@
 .subscription {
   background: url('../../public/images/m_img_7.png') center no-repeat;
   background-size: cover;
-  height: 250px;
+  @include for-notebook-landscape-up {
+    height: 250px;
+  }
   &__item {
-    transform: translateY(-35%);
+    padding: $-padding;
+    @include for-notebook-landscape-up {
+      transform: translateY(-35%);
+    }
     &__circle {
       background-color: $-orange;
       border-radius: 50%;

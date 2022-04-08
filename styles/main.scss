@@ -3,12 +3,18 @@
 @import './config/grid';
 @import './config/reset';
 @import './config/variables';
+@import './config/mixins';
 
 /* Components */
 @import './components/components';
 
 body {
   font-family: $-fontMuli;
+  font-size: 18px;
+
+  &.isActive {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -18,7 +24,7 @@ body {
 .orangeSection {
   background-color: $-orange;
   height: max-content;
-  margin-top: 250px;
+  margin-top: 50px;
   position: relative;
   width: 100vw;
   &::after {
@@ -30,14 +36,24 @@ body {
     bottom: 0;
     z-index: 1;
   }
+  @include for-tablet-portrait-up {
+    margin-top: 0;
+  }
+  @include for-notebook-landscape-up {
+    margin-top: 250px;
+  }
 }
 
 .orangeSection-large {
   background-color: $-orange;
-  height: 150vh;
-  margin-top: 280px;
   position: relative;
   width: 100vw;
+
+  @include for-notebook-landscape-up {
+    height: 150vh;
+    margin-top: 280px;
+  }
+
   &::after {
     background-color: #fff;
     content: '';
@@ -48,17 +64,24 @@ body {
     z-index: 1;
   }
   .offsetGrid{
-    margin-bottom: -200px;
+    @include for-notebook-landscape-up {
+      margin-bottom: -200px;
+    }
   }
 
   &.cursos {
-    height: 115vh;
-    margin-top: 135vh;
+    margin-top: 100vh;
+    @include for-notebook-landscape-up {
+      height: 115vh;
+      margin-top: 138vh;
+    }
     &::after {
       display: none;
     }
     .offsetGrid {
-      transform: translateY(-380px);
+      @include for-notebook-landscape-up {
+        transform: translateY(-380px);
+      }
     }
     ul {
       font-style: italic;
@@ -70,8 +93,13 @@ body {
     }
   }
   &.programas {
-    height: 125vh;
-    margin-top: 120vh;
+    height: 100%;
+    margin-top: 100vh;
+    @include for-notebook-landscape-up {
+      height: 125vh;
+      margin-top: 120vh;
+    }
+
     &::after {
       display: none;
     }
@@ -79,12 +107,52 @@ body {
       font-style: italic;
       list-style-image: url('../../public/assets/svg/line-list.svg');
       padding: $-padding 0 $-padding $-padding;
-      width: 60%;
+      width: 90%;
+      @include for-notebook-landscape-up {
+        width: 60%;
+      }
       li {
         padding: $-padding 0 0 $-padding;
       }
     }
   }
+
+  &.beboon {
+    height: 125vh;
+    margin-top: 135vh;
+    &::after {
+      display: none;
+    }
+    .offsetGrid {
+      transform: translateY(-390px);
+    }
+    .rightSection ul {
+      display: flex;
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: $-padding 0 $-padding 0;
+      width: 100%;
+      li {
+        list-style: inside;
+        padding: 0 $-padding 0 0;
+        margin: 0;
+
+        &:first-child {
+          list-style: none;
+        }
+      }
+    }
+    .content {
+      padding-top: $-padding * 2;
+      padding-bottom: $-padding * 2;
+      width: 50%;
+    }
+  }
+}
+
+.wrapBlog {
+  margin-top: 95vh;
 }
 
 .mirror {
