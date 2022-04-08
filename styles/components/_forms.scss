@@ -1,6 +1,10 @@
 .formNewsletter {
   margin: auto;
-  width: 60%;
+  width: 90%;
+
+  @include for-tablet-portrait-up {
+    width: 60%;
+  }
   input[type=text], input[type=email] {
     border: 1px solid $-white;
     border-radius: 5px;

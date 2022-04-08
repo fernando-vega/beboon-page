@@ -2152,7 +2152,13 @@ meter {
 
 .formNewsletter {
   margin: auto;
-  width: 60%;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .formNewsletter {
+    width: 60%;
+  }
 }
 
 .formNewsletter input[type=text], .formNewsletter input[type=email] {
