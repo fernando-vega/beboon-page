@@ -118,8 +118,9 @@ body {
   }
 
   &.beboon {
-    height: 125vh;
+    height: max-content;
     margin-top: 135vh;
+    padding-bottom: 50px;
     &::after {
       display: none;
     }
