@@ -94,6 +94,13 @@
 
           &_item {
             padding: 0.5em 0;
+            &:hover {
+              background-color: $-orange !important;
+              color: $-white !important;
+              a {
+                color: $-white !important;
+              }
+            }
           }
         }
       }
