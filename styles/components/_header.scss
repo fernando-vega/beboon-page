@@ -98,6 +98,9 @@
             &:focus {
               background-color: $-orange !important;
               color: $-white !important;
+              a {
+                color: $-white !important;
+              }
             }
           }
         }

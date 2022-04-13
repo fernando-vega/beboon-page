@@ -2345,6 +2345,10 @@ meter {
   color: #FDF6EF !important;
 }
 
+.mainHeader__nav__item .itemMenu__submenu_item:hover a, .mainHeader__nav__item .itemMenu__submenu_item:focus a {
+  color: #FDF6EF !important;
+}
+
 .mainHeader__nav__item:hover .itemMenu__submenu {
   height: auto;
   -webkit-transform: rotateX(0);
