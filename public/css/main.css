@@ -2341,8 +2341,8 @@ meter {
 }
 
 .mainHeader__nav__item .itemMenu__submenu_item:hover, .mainHeader__nav__item .itemMenu__submenu_item:focus {
-  background-color: #F15F24;
-  color: #FDF6EF;
+  background-color: #F15F24 !important;
+  color: #FDF6EF !important;
 }
 
 .mainHeader__nav__item:hover .itemMenu__submenu {

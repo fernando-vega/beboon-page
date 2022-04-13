@@ -96,8 +96,8 @@
             padding: 0.5em 0;
             &:hover,
             &:focus {
-              background-color: $-orange;
-              color: $-white;
+              background-color: $-orange !important;
+              color: $-white !important;
             }
           }
         }
