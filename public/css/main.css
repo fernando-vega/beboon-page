@@ -2340,15 +2340,6 @@ meter {
   padding: 0.5em 0;
 }
 
-.mainHeader__nav__item .itemMenu__submenu_item:hover {
-  background-color: #F15F24 !important;
-  color: #FDF6EF !important;
-}
-
-.mainHeader__nav__item .itemMenu__submenu_item:hover a {
-  color: #FDF6EF !important;
-}
-
 .mainHeader__nav__item:hover .itemMenu__submenu {
   height: auto;
   -webkit-transform: rotateX(0);
