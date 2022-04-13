@@ -1510,6 +1510,10 @@ meter {
     -webkit-transform: translateY(-250px);
             transform: translateY(-250px);
   }
+  .offsetGrid.noTranslate {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .leftSection {
@@ -2686,6 +2690,10 @@ meter {
   .infoSection.asesorias {
     margin-top: 85vh;
   }
+}
+
+.infoSection.beboon {
+  margin: 90vh 0 100px;
 }
 
 .video {

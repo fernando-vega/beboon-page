@@ -78,6 +78,9 @@
 
   @include for-notebook-landscape-up {
     transform: translateY(-250px);
+    &.noTranslate {
+      transform: translateY(0px);
+    }
   }
 }
 
