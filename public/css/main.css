@@ -2289,12 +2289,6 @@ meter {
   margin-top: 0;
 }
 
-@media (min-width: 1024px) {
-  .what-content.programas {
-    margin-top: -265px;
-  }
-}
-
 .what-content.programas::after {
   height: 100vh;
   -webkit-transform: translateY(-90vh);
