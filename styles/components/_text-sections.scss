@@ -1,16 +1,24 @@
 .infoSection {
+  background-color: $-white;
   color: $-orange;
+  padding: 50px 0;
 
-  @include for-tablet-portrait-up {
-    padding: $-padding * 4 0;
-    margin: 100px 0;
+  &.bgWhite {
+    background-color: #fff;
+  }
+
+  @include for-notebook-landscape-up {
+    padding: $-padding * 4 0 $-padding * 6;
   }
 
   &__text {
-    padding: $-padding;
+    padding: $-padding 25px;
     h3 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       margin-bottom: $-padding;
+      @include for-phone-only {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -33,10 +41,45 @@
   &.asesorias {
     margin-top: 100vh;
     @include for-notebook-landscape-up {
-      margin-top: 85vh;
+      margin-top: 78vh;
     }
   }
   &.beboon {
-    margin: 90vh 0 100px;
+    margin: 78vh 0 100px;
+  }
+}
+
+.aboutUs {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  @include for-notebook-landscape-up {
+    padding-top: 0;
+    margin-top: -100px;
+  }
+  h2 {
+    color: $-orange;
+    font-size: 2.5rem;
+    margin: auto;
+    width: 60%;
+  }
+  p{
+    color: $-orange;
+    font-size: 23px;
+    padding:$-padding * 2;
+    margin-bottom: 50px;
+  }
+  &__imageOffset {
+    display: block;
+    margin-bottom: -100px;
+    @include for-tablet-portrait-up {
+      display: none;
+      margin-bottom: 0;
+    }
+  }
+  &__imageOffset2 {
+    display: none;
+    @include for-tablet-portrait-up {
+      display: block;
+    }
   }
 }

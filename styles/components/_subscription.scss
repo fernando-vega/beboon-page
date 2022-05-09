@@ -20,8 +20,14 @@
       position: relative;
       width: 200px;
       h4 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+      }
+      small {
+        font-size: 15px;
       }
     }
+  }
+  .btnPrimary {
+    margin: 30px auto;
   }
 }

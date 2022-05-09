@@ -10,7 +10,14 @@
   <body>
     <header class="mainHeader">
       <div class="row end-xs">
-        <p class="numberHeader">+1 (305) 868-6850</p>
+        <p class="numberHeader">
+          <i class="whatsapp-icon"></i> +1 (305) 868-6850
+        </p>
+      </div>
+      <div class="logo__mobile">
+        <a href="/beboon-page/">
+          <img src="./public/assets/svg/logo-nav.svg" alt="Logo Beboon" />
+        </a>
       </div>
       <div class="hamburger">
         <div class="_layer -top"></div>
@@ -29,21 +36,26 @@
             </div>
           </a>
         </li>
-        <li class="mainHeader__nav__item col-xs-12 col-md">
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
           <span class="itemMenu">Cursos</span>
           <ul class="itemMenu__submenu">
-            <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/membresia.html">Membresia</a>
-            </li>
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/cursos.html">Cursos cortos</a>
             </li>
             <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/programas.html">The expert <br> of you</a>
+              <a href="/beboon-page/programas.html"
+                >The expert <br />
+                of you</a
+              >
             </li>
           </ul>
         </li>
         <li class="mainHeader__nav__item col-xs-12 col-md">
+          <a href="/beboon-page/membresia.html">
+            <span class="itemMenu"> Membresías </span>
+          </a>
+        </li>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
           <span class="itemMenu"
             >Asesorías <br />
             & Productos
@@ -57,22 +69,24 @@
             </li>
           </ul>
         </li>
-        <li class="mainHeader__nav__item col-xs-12 col-md">
-          <span class="itemMenu">Quienes somos</span>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
+          <span class="itemMenu">Quiénes<br>somos</span>
           <ul class="itemMenu__submenu">
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/quienes-somos.html">Beboon</a>
             </li>
             <li class="itemMenu__submenu_item">
-              <a href="https://www.patriciarestrepo.co/">Dr. Patricia</a>
-            </li>
-            <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/recomendados.html">Recomendados</a>
+              <a href="patricia.html">Dr. Patricia</a>
             </li>
           </ul>
         </li>
         <li class="mainHeader__nav__item col-xs-12 col-md">
-          <span class="itemMenu is-active">Blog</span>
+          <a href="/beboon-page/recomendados.html">
+            <span class="itemMenu"> Nuestros Recomendados </span>
+          </a>
+        </li>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
+          <span class="itemMenu">Recursos</span>
           <ul class="itemMenu__submenu">
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/recursos.html">Recetas</a>
@@ -84,7 +98,7 @@
               <a href="/beboon-page/recursos.html">Podcast</a>
             </li>
             <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/recursos.html">Articulos</a>
+              <a href="/beboon-page/recursos.html">Artículos</a>
             </li>
           </ul>
         </li>
@@ -97,11 +111,6 @@
         </li>
       </ul>
       <section class="headerBackground">
-        <img
-          class="headerBackground__line"
-          src="./public/assets/svg/line-2.svg"
-          alt=""
-        />
         <div class="headerBackground__content row middle-xs end-xs">
           <div class="col-xs-10 col-md-4">
             <div class="box">
@@ -120,12 +129,17 @@
     </header>
     <section class="helpBody row">
       <img
-        class="helpBody__imageOffset"
+        class="helpBody__imageOffset1"
         src="./public/assets/svg/line-text.svg"
         alt="Ayuda a tu cuerpo"
       />
       <div class="col-xs-12 helpBody__card container">
         <h3>Ayuda a tu cuerpo<br />de forma natural</h3>
+        <img
+          class="helpBody__imageOffset2"
+          src="./public/images/line-text-2.png"
+          alt="Ayuda a tu cuerpo"
+        />
         <h2>
           Todo se <br />
           trata de ti
@@ -135,19 +149,34 @@
             <p>Be es ser</p>
             <p>Boon es vida</p>
             <p>La salud está en ti</p>
-            <button class="btnPrimary btnWhite">Más videos</button>
+            <a
+              href="https://www.youtube.com/channel/UCGzoBnwOyuIxL5yJrpOd66Q"
+              target="_blank"
+              class="btnPrimary btnWhite"
+              >Más videos</a
+            >
           </div>
-          <div class="col-sm-8 end-xs">
-            <img src="./public/images/img_2.png" alt="Video" />
+          <div class="col-sm-8 end-xs video-container">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="90%"
+              height="100%"
+              type="text/html"
+              src="https://www.youtube.com/embed/vY77_0sTOio?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+            >
+            </iframe>
           </div>
         </div>
       </div>
     </section>
     <section class="row middle-xs infoSection">
-      <div class="col-sm-6 top-sm">
+      <div class="col-xs-1 col-md-5 top-sm">
         <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
-      <div class="col-sm-4 middle-xs infoSection__text">
+      <div class="col-xs-10 col-md-5 middle-xs infoSection__text">
         <h3>
           3 formas de aprender a crear tu propia salud de forma fácil, práctica
           y aplicable.
@@ -159,7 +188,7 @@
           <li>Programas</li>
         </ul>
       </div>
-      <div class="col-sm-2 bottom-sm">
+      <div class="col-xs-1 col-sm-2 bottom-sm">
         <img src="./public/assets/svg/line-3.svg" alt="Linea" />
       </div>
     </section>
@@ -180,7 +209,9 @@
             <li>Health Challenge mensual</li>
             <li>Webinar en vivo</li>
           </ul>
-          <button class="btnPrimary btnOrange">Más videos</button>
+          <a href="/beboon-page/membresia.html" class="btnPrimary btnOrange"
+            >Hazte miembro</a
+          >
         </div>
         <div class="rightSection cardImg">
           <img
@@ -209,7 +240,7 @@
           />
         </div>
         <div class="rightSection cardText">
-          <h3>Cursos</h3>
+          <h3>Cursos cortos</h3>
           <p>
             Aprenderás que con pequeñas acciones saludables podrás cambiar
             aquellas dolencias que son más comunes de lo que pensamos.
@@ -219,19 +250,26 @@
             <li>Accionables</li>
             <li>E-book descargable</li>
           </ul>
-          <button class="btnPrimary btnOrange">Más videos</button>
+          <a href="/beboon-page/cursos.html" class="btnPrimary btnOrange"
+            >Conoce los cursos</a
+          >
         </div>
       </section>
       <section class="offsetGrid container">
         <div class="leftSection cardText">
-          <h3>Programa de Profundización</h3>
-          <p>The expert <br> of </p>
+          <h3>
+            The expert <br />
+            of
+          </h3>
+          <p>Programa de Profundización</p>
           <ul>
             <li>Ayudarte a convertirte en el mejor experto de tu cuerpo.</li>
             <li>Manejar tus metas del cuerpo proactivamente.</li>
             <li>Desarrollar conciencia de las señales que tu cuerpo te da.</li>
           </ul>
-          <button class="btnPrimary btnOrange">Más videos</button>
+          <a href="/beboon-page/programas.html" class="btnPrimary btnOrange"
+            >Inscríbete</a
+          >
         </div>
         <div class="rightSection lastSection cardImg">
           <img
@@ -249,7 +287,7 @@
     </div>
     <section class="bannerInfoHome">
       <div class="row container end-sm bannerInfoHome__content middle-xs">
-        <div class="col-sm-5 start-xs">
+        <div class="col-sm-7 start-xs">
           <h4>SOBRE</h4>
           <h2>Dra. Patricia Restrepo</h2>
           <span>Médica</span>
@@ -260,7 +298,12 @@
             cerebral de mi hijo y he ayudado a cientos de personas a ser los
             creadores de supropia salud.
           </p>
-          <button class="btnPrimary btnOrange">Conoce mi historia</button>
+          <a
+            href="https://youtu.be/XG_LLOXELFI"
+            target="_blank"
+            class="btnPrimary btnOrange"
+            >Conoce mi historia</a
+          >
         </div>
       </div>
     </section>
@@ -276,7 +319,7 @@
         </p>
       </div>
       <div class="col-sm-6 bottom-sm">
-        <img src="./public/assets/svg/line-6.svg" alt="Linea" />
+        <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
     </section>
     <section class="video">
@@ -288,8 +331,13 @@
               <span class="playBtn"></span>
             </div>
             <h3>No puedo ir al baño y eso no es normal</h3>
-            <button class="video__item__btnWhite">Ver trailer</button>
-            <button class="video__item__btnOrange">Ir al curso</button>
+            <a
+              href="https://youtu.be/H4EjeqwegAQ"
+              target="_blank"
+              class="video__item__btnWhite"
+              >Ver trailer</a
+            >
+            <a class="video__item__btnOrange">Ir al curso</a>
           </div>
           <div class="video__item col-xs-12 col-sm-6">
             <div class="video__item__wrapCover">
@@ -297,39 +345,33 @@
               <span class="playBtn"></span>
             </div>
             <h3>Vivo cansado y eso no es normal</h3>
-            <button class="video__item__btnWhite">Ver trailer</button>
-            <button class="video__item__btnOrange">Ir al curso</button>
+            <a href="https://youtu.be/4xeNLsAmTSc" class="video__item__btnWhite"
+              >Ver trailer</a
+            >
+            <a class="video__item__btnOrange">Ir al curso</a>
           </div>
         </div>
       </div>
-      <div class="center-xs">
-        <a href="/cursos" class="btnPrimary btnWhite btnWhite__border"
+      <div class="row center-xs">
+        <a
+          href="/beboon-page/cursos.html"
+          class="btnPrimary btnWhite btnWhite__border"
           >Ver mas cursos</a
         >
       </div>
     </section>
     <section class="bannerInfoHome2">
       <div class="row center-xs middle-xs">
-        <div class="col-xs">
-          <img src="./public/assets/svg/line-7.svg" alt="" />
-        </div>
         <div class="bannerInfoHome2__content">
           <h4>Recetas <br />deliciosas</h4>
           <img src="./public/assets/svg/orange-title.svg" alt="" />
           <p>Crea tu propia salud de forma fácil, practica y aplicable</p>
         </div>
-        <div class="col-xs">
-          <img
-            class="animationRotate"
-            src="./public/assets/svg/line-8.svg"
-            alt=""
-          />
-        </div>
       </div>
     </section>
     <section class="galleryEat container">
       <div class="row around-xs">
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_10.png" alt="Leche dorada" />
             <p>Leche dorada</p>
@@ -337,7 +379,7 @@
             <span class="lineOffset"></span>
           </a>
         </div>
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_11.png" alt="Leche dorada" />
             <p>Pancakes</p>
@@ -345,7 +387,7 @@
             <span class="lineOffset"></span>
           </a>
         </div>
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_12.png" alt="Leche dorada" />
             <p>Aguacates rellenos</p>
@@ -353,7 +395,7 @@
             <span class="lineOffset"></span>
           </a>
         </div>
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_13.png" alt="Leche dorada" />
             <p>Smoothie</p>
@@ -361,7 +403,7 @@
             <span class="lineOffset"></span>
           </a>
         </div>
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_14.png" alt="Leche dorada" />
             <p>Ceviche</p>
@@ -369,7 +411,7 @@
             <span class="lineOffset"></span>
           </a>
         </div>
-        <div class="co-xs-12 col-sm-6 col-md-4 galleryEat__itemWrap">
+        <div class="col-xs-6 col-md-4 galleryEat__itemWrap">
           <a href="#" class="galleryEat__item">
             <img src="./public/images/img_15.png" alt="Leche dorada" />
             <p>Batatas al Romero</p>
@@ -381,7 +423,7 @@
     </section>
     <section class="row middle-xs infoSection">
       <div class="col-sm-6 top-sm">
-        <img src="./public/assets/svg/line-6.svg" alt="Linea" />
+        <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
       <div class="col-sm-4 middle-xs infoSection__text">
         <h3>Preguntas frecuentes</h3>
@@ -501,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="center-xs col-xs-12">
+        <div class="row center-xs col-xs-12">
           <button class="btnPrimary btnWhite__border">Cargas más</button>
         </div>
       </div>
@@ -565,7 +607,7 @@
       </div>
     </section>
     <section class="bannerNewsletter">
-      <div class="row middle-xs">
+      <div class="row middle-xs bannerNewsletter__content">
         <div class="col-xs-12 col-md-6"></div>
         <div class="col-xs-12 col-md-6 center-xs">
           <h3>Suscríbete a nuestro newsletter</h3>
@@ -590,42 +632,47 @@
       </div>
     </section>
     <footer class="mainFooter">
-      <div class="container row around-xs">
-        <div class="col-xs-12 col-sm-6">
+      <div class="row around-xs">
+        <div class="col-xs-12 col-sm-8">
           <div class="row center-xs start-sm">
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
-                  <a href="/membresia">Membresía</a>
+                  <a href="/beboon-page/membresia.html">Membresía</a>
                 </li>
                 <li>
-                  <a href="/programas">Programas</a>
+                  <a href="/beboon-page/cursos.html">Cursos cortos</a>
                 </li>
                 <li>
-                  <a href="/cursos">Cursos</a>
+                  <a href="/beboon-page/programas.html">The expert of you</a>
                 </li>
                 <li>
-                  <a href="/servicios">Servicios</a>
+                  <a href="/asesorias.html">Asesorías</a>
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
-                  <a href="/beboon">Beboon</a>
+                  <a href="/beboon-page/productos.html">Productos</a>
                 </li>
                 <li>
-                  <a href="/recursos">Recursos</a>
+                  <a href="/beboon-page/quienes-somos.html">Bebbon</a>
                 </li>
                 <li>
-                  <a href="/recetas">Recetas</a>
+                  <a href="/beboon-page/patricia.html">Dr Patricia</a>
                 </li>
                 <li>
-                  <a href="/testimonios">Testimonios</a>
+                  <a href="/beboon-page/recomendados.html"
+                    >Nuestros recomendados</a
+                  >
+                </li>
+                <li>
+                  <a href="/beboon-page/recursos.html">Recursos</a>
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
                   <a href="/politicas-privacidad">Políticas de Provacidad</a>
@@ -646,13 +693,56 @@
         <div class="col-xs-1 mainFooter__line">
           <img src="./public/assets/svg/line-vertical.svg" alt="" />
         </div>
-        <div class="col-xs-10 col-sm-5 mainFooter__infoContact">
+        <div class="col-xs-10 col-sm-3 mainFooter__infoContact">
           <h3>Contacto</h3>
-          <h5>TELÉFONO DE CONTACTO EN MIAMI & EL RESTO DEL MUNDO</h5>
-          <p>+1 (305) 868-6850</p>
-          <h5>OF. MIAMI</h5>
-          <p>50W Mashta Drive Suite 3</p>
-          <p>Kery biscayne FL 33149</p>
+          <div class="col-xs-12">
+            <a
+              href="https://www.instagram.com/beboon.health/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram Dr. Patricia</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.instagram.com/beboon.health/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram BeBoon</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.facebook.com/beboon.health"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.linkedin.com/company/beboon/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.youtube.com/c/DrPatriciaRestrepo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://open.spotify.com/show/7r2POO8Dywl4imxizBRwJ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spotify</a
+            >
+          </div>
         </div>
       </div>
     </footer>

@@ -10,7 +10,14 @@
   <body>
     <header class="mainHeader">
       <div class="row end-xs">
-        <p class="numberHeader">+1 (305) 868-6850</p>
+        <p class="numberHeader">
+          <i class="whatsapp-icon"></i> +1 (305) 868-6850
+        </p>
+      </div>
+      <div class="logo__mobile">
+        <a href="/beboon-page/">
+          <img src="./public/assets/svg/logo-nav.svg" alt="Logo Beboon" />
+        </a>
       </div>
       <div class="hamburger">
         <div class="_layer -top"></div>
@@ -29,12 +36,9 @@
             </div>
           </a>
         </li>
-        <li class="mainHeader__nav__item col-xs-12 col-md">
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
           <span class="itemMenu">Cursos</span>
           <ul class="itemMenu__submenu">
-            <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/membresia.html">Membresia</a>
-            </li>
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/cursos.html">Cursos cortos</a>
             </li>
@@ -47,6 +51,11 @@
           </ul>
         </li>
         <li class="mainHeader__nav__item col-xs-12 col-md">
+          <a href="/beboon-page/membresia.html">
+            <span class="itemMenu"> Membresías </span>
+          </a>
+        </li>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
           <span class="itemMenu"
             >Asesorías <br />
             & Productos
@@ -60,22 +69,24 @@
             </li>
           </ul>
         </li>
-        <li class="mainHeader__nav__item col-xs-12 col-md">
-          <span class="itemMenu">Quienes somos</span>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
+          <span class="itemMenu is-active">Quiénes<br />somos</span>
           <ul class="itemMenu__submenu">
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/quienes-somos.html">Beboon</a>
             </li>
             <li class="itemMenu__submenu_item">
-              <a href="https://www.patriciarestrepo.co/">Dr. Patricia</a>
-            </li>
-            <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/recomendados.html">Recomendados</a>
+              <a href="patricia.html">Dr. Patricia</a>
             </li>
           </ul>
         </li>
         <li class="mainHeader__nav__item col-xs-12 col-md">
-          <span class="itemMenu is-active">Blog</span>
+          <a href="/beboon-page/recomendados.html">
+            <span class="itemMenu"> Nuestros Recomendados </span>
+          </a>
+        </li>
+        <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
+          <span class="itemMenu">Recursos</span>
           <ul class="itemMenu__submenu">
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/recursos.html">Recetas</a>
@@ -87,7 +98,7 @@
               <a href="/beboon-page/recursos.html">Podcast</a>
             </li>
             <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/recursos.html">Articulos</a>
+              <a href="/beboon-page/recursos.html">Artículos</a>
             </li>
           </ul>
         </li>
@@ -122,7 +133,7 @@
     </header>
     <section class="row middle-xs infoSection beboon">
       <div class="col-sm-4 top-sm">
-        <img src="./public/assets/svg/line-6.svg" alt="Linea" />
+        <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
       <div class="col-sm-6 middle-xs infoSection__text">
         <h3>
@@ -142,147 +153,101 @@
     </section>
     <section class="offsetGrid container noTranslate">
       <div class="leftSection firstSection cardText">
-        <h3>Membresía</h3>
-        <p>
-          Queremos que te sientas en un lugar<br>seguro en la busqueda de
-          mejorar tu salud
-        </p>
-        <ul>
-          <li>Información actualizada.</li>
-          <li>Grupos de soporte y conversación</li>
-          <li>Ask Patricia - 30 minutos</li>
-          <li>Video llamada Mensual</li>
-          <li>Master class especializada</li>
-          <li>Health Challenge mensual</li>
-          <li>Webinar en vivo</li>
-        </ul>
-        <button class="btnPrimary btnOrange">Más videos</button>
+        <div class="cardText__text">
+          <p>
+            Somos una empresa con sedes en Ciudad de México y Miami que nace a
+            partir de la necesidad de encontrar la raíz de los problemas de
+            salud y bienestar.
+          </p>
+          <p>
+            En BeBoon queremos que nuestra comunidad SE APROPIE Y SE EMPODERE de
+            las herramientas que tenemos a la disposición de todos para poder
+            tomar mejores decisiones en cuanto a nuestro cuerpo y salud.
+          </p>
+          <p>
+            Lo que consumimos es el combustible que le da energía a nuestro
+            cerebro y todos nuestros órganos para que funcionen como una
+            máquina, tú decides la calidad del combustible que quieres en tu
+            vida
+          </p>
+        </div>
       </div>
       <div class="rightSection cardImg">
-        <img class="cardImg__background" src="./public/images/img_3.png" alt="Manos">
-        <img class="cardImg__line lineLeft" src="./public/assets/svg/line-heart.svg" alt="Corazón">
+        <img
+          class="cardImg__background"
+          src="./public/images/img_3.png"
+          alt="Manos"
+        />
+        <img
+          class="cardImg__line lineLeft"
+          src="./public/assets/svg/line-heart.svg"
+          alt="Corazón"
+        />
       </div>
     </section>
-    <section class="testimonials">
+    <section class="aboutUs">
       <div class="container">
-        <div class="slider">
-          <div class="slide-wrap">
-            <div class="item">
-              <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
-                </div>
-                <div class="text">
-                  <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
-                    <small>Dominika</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
-                </div>
-                <div class="text">
-                  <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
-                    <small>Dominika</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
-                </div>
-                <div class="text">
-                  <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
-                    <small>Dominika</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <span class="icon-arrow_back" id="prev"></span>
-          <span class="icon-arrow_forward" id="next"></span>
+        <div class="row center-xs">
+          <h2>Nuestro método para ayudar a tu cuerpo de forma natural</h2>
+          <p>
+            Desarrollamos un proceso de trabajo estructurado con el fin de
+            aprender a cuidarnos autonamemente.
+          </p>
+          <img
+            class="aboutUs__imageOffset"
+            src="./public/images/line-text-2.png"
+            alt="Ayuda a tu cuerpo"
+          />
         </div>
       </div>
-    </section>
-    <section class="bannerNewsletter">
-      <div class="row middle-xs">
-        <div class="col-xs-12 col-md-6"></div>
-        <div class="col-xs-12 col-md-6 center-xs">
-          <h3>Suscríbete a nuestro newsletter</h3>
-          <form class="formNewsletter" action="" method="post">
-            <input type="text" placeholder="Tu nombre" />
-            <input type="email" placeholder="Email" />
-            <div class="start-xs">
-              <input type="checkbox" name="agree" id="agree" />
-              <label for="agree"
-                >Marcando esta casilla, consiento el envío de comunicaciones
-                comerciales de terceros al correo arriba indicado.</label
-              >
-              <p>
-                Al hacer clic en “Suscríbete ya”, confirmo que he leído y acepto
-                la Política de Privacidad y que consiento el envío de
-                newsletters al correo arriba indicado.
-              </p>
-              <button class="btnPrimary btnWhite">Suscríbete ya</button>
-            </div>
-          </form>
-        </div>
-      </div>
+      <img
+        class="aboutUs__imageOffset2"
+        src="./public/assets/svg/line-text.svg"
+        alt="Ayuda a tu cuerpo"
+      />
     </section>
     <footer class="mainFooter">
-      <div class="container row around-xs">
-        <div class="col-xs-12 col-sm-6">
+      <div class="row around-xs">
+        <div class="col-xs-12 col-sm-8">
           <div class="row center-xs start-sm">
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
-                  <a href="/membresia">Membresía</a>
+                  <a href="/beboon-page/membresia.html">Membresía</a>
                 </li>
                 <li>
-                  <a href="/programas">Programas</a>
+                  <a href="/beboon-page/cursos.html">Cursos cortos</a>
                 </li>
                 <li>
-                  <a href="/cursos">Cursos</a>
+                  <a href="/beboon-page/programas.html">The expert of you</a>
                 </li>
                 <li>
-                  <a href="/servicios">Servicios</a>
+                  <a href="/asesorias.html">Asesorías</a>
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
-                  <a href="/beboon">Beboon</a>
+                  <a href="/beboon-page/productos.html">Productos</a>
                 </li>
                 <li>
-                  <a href="/recursos">Recursos</a>
+                  <a href="/beboon-page/quienes-somos.html">Bebbon</a>
                 </li>
                 <li>
-                  <a href="/recetas">Recetas</a>
+                  <a href="/beboon-page/patricia.html">Dr Patricia</a>
                 </li>
                 <li>
-                  <a href="/testimonios">Testimonios</a>
+                  <a href="/beboon-page/recomendados.html"
+                    >Nuestros recomendados</a
+                  >
+                </li>
+                <li>
+                  <a href="/beboon-page/recursos.html">Recursos</a>
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6 col-lg-4">
               <ul class="mainFooter__menu">
                 <li>
                   <a href="/politicas-privacidad">Políticas de Provacidad</a>
@@ -303,13 +268,56 @@
         <div class="col-xs-1 mainFooter__line">
           <img src="./public/assets/svg/line-vertical.svg" alt="" />
         </div>
-        <div class="col-xs-10 col-sm-5 mainFooter__infoContact">
+        <div class="col-xs-10 col-sm-3 mainFooter__infoContact">
           <h3>Contacto</h3>
-          <h5>TELÉFONO DE CONTACTO EN MIAMI & EL RESTO DEL MUNDO</h5>
-          <p>+1 (305) 868-6850</p>
-          <h5>OF. MIAMI</h5>
-          <p>50W Mashta Drive Suite 3</p>
-          <p>Kery biscayne FL 33149</p>
+          <div class="col-xs-12">
+            <a
+              href="https://www.instagram.com/beboon.health/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram Dr. Patricia</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.instagram.com/beboon.health/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram BeBoon</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.facebook.com/beboon.health"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.linkedin.com/company/beboon/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://www.youtube.com/c/DrPatriciaRestrepo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </div>
+          <div class="col-xs-12">
+            <a
+              href="https://open.spotify.com/show/7r2POO8Dywl4imxizBRwJ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spotify</a
+            >
+          </div>
         </div>
       </div>
     </footer>

@@ -1,12 +1,12 @@
 .mainFooter {
   background-color: $-orange;
   color: $-white;
-  padding: $-padding * 6 $-padding;
+  padding: $-padding * 6 $-padding * 2;
   position: relative;
 
   &__menu {
     li {
-      padding: $-padding;
+      padding: 5px $-padding;
     }
   }
 
@@ -38,8 +38,8 @@
     background: url('../../public/assets/svg/line-footer.svg') center no-repeat;
     position: absolute;
     height: 100px;
-    width: 30%;
+    width: 20%;
     right: 0;
-    top: 80px;
+    top: 40px;
   }
 }
