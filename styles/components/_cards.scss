@@ -130,6 +130,9 @@
       @include for-notebook-landscape-up {
         margin-left: -150px;
       }
+      @include for-desktop-up {
+        margin-left: -60px;
+      }
       .channelImg img {
         border: 2px solid $-purple;
         border-radius: 50%;

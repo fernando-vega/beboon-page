@@ -1649,6 +1649,12 @@ meter {
   }
 }
 
+@media (min-width: 1200px) {
+  .offsetGrid .rightSection .channels {
+    margin-left: -60px;
+  }
+}
+
 .offsetGrid .rightSection .channels .channelImg img {
   border: 2px solid #662D91;
   border-radius: 50%;
