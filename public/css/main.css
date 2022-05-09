@@ -3490,6 +3490,46 @@ body.isActive {
   padding: 30px 15px;
 }
 
+.orangeSection-large.patricia {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 110vh;
+  padding-bottom: 50px;
+}
+
+.orangeSection-large.patricia::after {
+  display: none;
+}
+
+.orangeSection-large.patricia .rightSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 15px 0 15px 0;
+  width: 100%;
+}
+
+.orangeSection-large.patricia .rightSection ul li {
+  list-style: inside;
+  padding: 0 15px 0 0;
+  margin: 0;
+}
+
+.orangeSection-large.patricia .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+.orangeSection-large.patricia .content.full-width {
+  width: 95%;
+  padding: 30px 15px;
+}
+
 .wrapBlog {
   margin-top: 95vh;
 }
