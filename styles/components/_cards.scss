@@ -607,9 +607,6 @@
   }
   &.programas {
     margin-top: 0;
-    @include for-notebook-landscape-up {
-      margin-top: -265px;
-    }
     &::after {
       height: 100vh;
       transform: translateY(-90vh);
