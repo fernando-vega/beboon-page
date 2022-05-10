@@ -10,6 +10,10 @@
   transition: all 0.3s ease-in-out;
   width: max-content;
 
+  &.align-start {
+    margin: $-padding * 2 0;
+  }
+
   @include for-notebook-landscape-up {
     margin: $-padding * 2 0;
   }

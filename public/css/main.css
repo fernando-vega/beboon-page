@@ -1284,6 +1284,7 @@ meter {
 
 .bannerInfoHome__content p {
   padding: 15px 0 0;
+  font-size: 23px;
   font-style: italic;
 }
 
@@ -1317,6 +1318,7 @@ meter {
 }
 
 .bannerInfoHome2__content p {
+  font-size: 23px;
   margin-top: 15px;
 }
 
@@ -1407,17 +1409,18 @@ meter {
 }
 
 .wrapBlog__header p {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   color: #F15F24;
-  height: 40%;
+  display: -webkit-box;
+  font-size: 23px;
+  height: 55%;
+  line-clamp: 2;
+  max-width: 100%;
+  overflow: hidden;
   padding: 15px;
   text-align: start;
-  overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 
 .wrapBlog__date {
@@ -1450,6 +1453,10 @@ meter {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.btnPrimary.align-start {
+  margin: 30px 0;
 }
 
 @media (min-width: 1024px) {
@@ -1716,6 +1723,7 @@ meter {
 .cardText p {
   padding: 0 0 15px;
   font-style: italic;
+  font-size: 23px;
 }
 
 .cardText ul {
@@ -1731,7 +1739,7 @@ meter {
 
 @media (min-width: 1024px) {
   .cardText.rightSection {
-    padding-left: 40%;
+    padding-left: 35%;
   }
 }
 
@@ -1818,7 +1826,7 @@ meter {
 .cardImg iframe {
   margin: 5%;
   min-height: 280px;
-  width: 95%;
+  width: 90%;
 }
 
 .cardImg__background {
@@ -2068,7 +2076,7 @@ meter {
 
 .testimonials__grid .text {
   background-color: #F15F24;
-  padding: 30px;
+  padding: 0 30px;
   position: relative;
   z-index: 2;
 }
@@ -2094,9 +2102,9 @@ meter {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 23px;
   font-weight: 700;
-  height: 100%;
+  height: 98%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2105,7 +2113,7 @@ meter {
 
 @media (min-width: 1024px) {
   .testimonials__grid .text p {
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -2171,6 +2179,7 @@ meter {
 
 .studies__grid__text p {
   color: #F15F24;
+  font-size: 23px;
   width: 65%;
 }
 
@@ -2265,6 +2274,7 @@ meter {
   margin: auto;
   padding: 15px 0;
   font-style: italic;
+  font-size: 23px;
   width: 200px;
 }
 
@@ -2308,7 +2318,7 @@ meter {
 
 .imageText__text {
   color: #FDF6EF;
-  padding: 30px;
+  padding: 30px 30px 100px;
 }
 
 @media (min-width: 1024px) {
@@ -2329,6 +2339,7 @@ meter {
 
 .imageText__text p {
   font-style: italic;
+  font-size: 23px;
   margin-top: 15px;
 }
 
@@ -2365,6 +2376,7 @@ meter {
 
 .and-more p {
   padding: 15px 0;
+  font-size: 23px;
 }
 
 @media (min-width: 1024px) {
@@ -2409,7 +2421,7 @@ meter {
 
 .faq-label-text {
   color: #F15F24;
-  font-size: 1.4rem;
+  font-size: 23px;
 }
 
 .faq-label-icon {
@@ -2803,7 +2815,7 @@ meter {
 }
 
 .headerBackground.beboon {
-  background: url("../../public/images/bb_img_1.png") no-repeat center;
+  background: url("../../public/images/misrecomendados.png") no-repeat center;
   background-position-x: 65%;
   background-size: cover;
 }
@@ -2815,7 +2827,7 @@ meter {
 }
 
 .headerBackground.patricia {
-  background: url("../../public/images/a_img_1.png") no-repeat center;
+  background: url("../../public/images/img_1.png") no-repeat center;
   background-position-x: 65%;
   background-size: cover;
 }
@@ -2894,7 +2906,6 @@ meter {
 }
 
 .headerBackground__content__text {
-  font-size: 1rem;
   width: 90%;
 }
 
@@ -3143,7 +3154,7 @@ meter {
 }
 
 .infoSection__text p {
-  font-size: 1.3rem;
+  font-size: 23px;
   font-style: italic;
 }
 
@@ -3326,14 +3337,21 @@ body {
   font-size: 23px;
 }
 
+body.isActive {
+  overflow: hidden;
+}
+
+body p {
+  font-size: 23px;
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 18px;
   }
-}
-
-body.isActive {
-  overflow: hidden;
+  body p {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -3353,7 +3371,7 @@ body.isActive {
 
 .orangeSection::after {
   background-color: #fff;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 350px;
@@ -3424,7 +3442,6 @@ body.isActive {
 
 @media (min-width: 1024px) {
   .orangeSection-large.programas {
-    height: 125vh;
     margin-top: 120vh;
   }
 }
@@ -3438,12 +3455,6 @@ body.isActive {
   list-style-image: url("../../public/assets/svg/line-list.svg");
   padding: 15px 0 15px 15px;
   width: 90%;
-}
-
-@media (min-width: 1024px) {
-  .orangeSection-large.programas ul {
-    width: 60%;
-  }
 }
 
 .orangeSection-large.programas ul li {

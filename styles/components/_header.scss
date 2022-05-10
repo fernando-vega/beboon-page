@@ -223,7 +223,7 @@
     }
   }
   &.beboon {
-    background: url("../../public/images/bb_img_1.png") no-repeat center;
+    background: url("../../public/images/misrecomendados.png") no-repeat center;
     background-position-x: 65%;
     background-size: cover;
     @include for-notebook-landscape-up {
@@ -231,7 +231,7 @@
     }
   }
   &.patricia {
-    background: url("../../public/images/a_img_1.png") no-repeat center;
+    background: url("../../public/images/img_1.png") no-repeat center;
     background-position-x: 65%;
     background-size: cover;
     @include for-notebook-landscape-up {
@@ -292,7 +292,6 @@
     }
 
     &__text {
-      font-size: 1rem;
       width: 90%;
     }
 
