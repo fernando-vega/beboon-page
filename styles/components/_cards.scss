@@ -239,7 +239,7 @@
       width: 100%;
       @include for-notebook-landscape-up {
         width: 60%;
-        padding: $-padding * 2 0 $-padding * 2 20%;
+        padding: $-padding * 2 0 $-padding * 2 25%;
       }
       p {
         color: $-orange;

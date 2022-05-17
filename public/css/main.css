@@ -1797,7 +1797,7 @@ meter {
 @media (min-width: 1024px) {
   .cardText.bgWhite .content {
     width: 60%;
-    padding: 30px 0 30px 20%;
+    padding: 30px 0 30px 25%;
   }
 }
 
@@ -3126,6 +3126,17 @@ meter {
   background-color: #FDF6EF;
   color: #F15F24;
   padding: 50px 0;
+}
+
+.infoSection.cursos {
+  margin-top: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .infoSection.cursos {
+    margin-top: 80vh;
+    height: auto;
+  }
 }
 
 .infoSection.bgWhite {

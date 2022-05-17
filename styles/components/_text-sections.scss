@@ -3,6 +3,14 @@
   color: $-orange;
   padding: 50px 0;
 
+  &.cursos {
+    margin-top: 100vh;
+    @include for-notebook-landscape-up {
+      margin-top: 80vh;
+      height: auto;
+    }
+  }
+
   &.bgWhite {
     background-color: #fff;
   }
