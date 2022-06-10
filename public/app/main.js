@@ -12,7 +12,9 @@ function init() {
   );
 
   // selector
-  var menu = document.querySelector(".hamburger");
+  let menu = document.querySelector(".hamburger");
+  let modal = document.querySelector(".openModal");
+  let closeModal = document.querySelector(".closeModal");
 
   // method
   function toggleMenu(event) {
@@ -22,8 +24,16 @@ function init() {
     event.preventDefault();
   }
 
+  function toggleModal(event) {
+    this.classList.toggle("active");
+    document.querySelector(".modal").classList.toggle("active");
+    document.querySelector("body").classList.toggle("isActive");
+  }
+
   // event
   menu.addEventListener("click", toggleMenu, false);
+  modal.addEventListener("click", toggleModal, false);
+  closeModal.addEventListener("click", toggleModal, false);
 }
 
 let arrowIconLeft =

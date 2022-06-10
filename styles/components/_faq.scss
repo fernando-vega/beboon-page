@@ -3,6 +3,10 @@
   margin: auto;
   position: relative;
   height: auto;
+
+  &.preguntas-frecuentes {
+    margin-top: 80vh;
+  }
 }
 
 .faq-container {

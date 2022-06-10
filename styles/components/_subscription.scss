@@ -6,9 +6,6 @@
   }
   &__item {
     padding: $-padding;
-    @include for-notebook-landscape-up {
-      transform: translateY(-35%);
-    }
     &__circle {
       background-color: $-orange;
       border-radius: 50%;

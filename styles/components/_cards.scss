@@ -109,7 +109,7 @@
   @include for-notebook-landscape-up {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin-bottom: $-padding * 4;
     padding-top: 0;
   }
@@ -286,10 +286,6 @@
       right: 0;
     }
   }
-
-  &.lastSection {
-    margin-bottom: -25%;
-  }
 }
 
 .galleryEat {
@@ -300,9 +296,10 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  max-width: 100%;
 
   @include for-desktop-up {
-    padding: $-padding * 4;
+    padding: $-padding * 3;
   }
 
   &__itemWrap {
@@ -430,7 +427,7 @@
   background-color: $-orange-light;
   padding: $-padding * 4 0;
   position: relative;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   &__grid {
     display: flex;
@@ -620,6 +617,16 @@
 .imageText {
   position: relative;
   z-index: 2;
+
+  ul {
+    font-style: italic;
+    list-style-image: url("../../public/assets/svg/line-list.svg");
+    padding: $-padding 0 $-padding $-padding;
+    li {
+      padding: $-padding 0 0 $-padding;
+    }
+  }
+
   &__row {
     @include for-notebook-landscape-up {
       margin-top: $-padding * 4;

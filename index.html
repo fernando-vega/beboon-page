@@ -70,10 +70,10 @@
           </ul>
         </li>
         <li class="mainHeader__nav__item item__submenu col-xs-12 col-md">
-          <span class="itemMenu">Quiénes<br>somos</span>
+          <span class="itemMenu">Quiénes<br />somos</span>
           <ul class="itemMenu__submenu">
             <li class="itemMenu__submenu_item">
-              <a href="/beboon-page/quienes-somos.html">Beboon</a>
+              <a href="/beboon-page/quienes-somos.html">BeBoon</a>
             </li>
             <li class="itemMenu__submenu_item">
               <a href="patricia.html">Dr. Patricia</a>
@@ -100,6 +100,15 @@
             <li class="itemMenu__submenu_item">
               <a href="/beboon-page/recursos.html">Youtube</a>
             </li>
+            <li class="itemMenu__submenu_item">
+              <a href="/beboon-page/index.html">Testimonios</a>
+            </li>
+            <li class="itemMenu__submenu_item">
+              <a href="/beboon-page/preguntas-frecuentes.html"
+                >Preguntas <br />
+                frecuentes</a
+              >
+            </li>
           </ul>
         </li>
         <li class="mainHeader__nav__item col-xs-12 col-md">
@@ -119,8 +128,8 @@
               </h1>
               <img src="./public/assets/svg/orange-title.svg" alt="line" />
               <p class="headerBackground__text">
-                Beboon es la primera plataforma de
-                educación en salud de Latinoamerica
+                BeBoon es la primera plataforma de educación en salud de
+                Latinoamerica
               </p>
             </div>
           </div>
@@ -172,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="row middle-xs infoSection">
+    <section class="row middle-xs infoSection colorless">
       <div class="col-xs-1 col-md-5 top-sm">
         <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
@@ -183,8 +192,6 @@
         </h3>
         <p>Recibe información que te acopañará en tu proceso de sanación</p>
         <ul class="row">
-          <li>Membresías</li>
-          <li>Cursos</li>
           <li>Programas</li>
         </ul>
       </div>
@@ -202,15 +209,11 @@
           </p>
           <ul>
             <li>Información actualizada.</li>
-            <li>Grupos de soporte y conversación</li>
-            <li>Ask Patricia - 30 minutos</li>
-            <li>Video llamada Mensual</li>
-            <li>Master class especializada</li>
             <li>Health Challenge mensual</li>
             <li>Webinar en vivo</li>
           </ul>
           <a href="/beboon-page/membresia.html" class="btnPrimary btnOrange"
-            >Hazte miembro</a
+            >Déjanos tus datos</a
           >
         </div>
         <div class="rightSection cardImg">
@@ -298,15 +301,35 @@
             cerebral de mi hijo y he ayudado a cientos de personas a ser los
             creadores de supropia salud.
           </p>
-          <a
+          <button
             href="https://youtu.be/XG_LLOXELFI"
             target="_blank"
-            class="btnPrimary btnOrange"
-            >Conoce mi historia</a
+            class="btnPrimary btnOrange openModal"
           >
+            Conoce mi historia
+          </button>
         </div>
       </div>
     </section>
+    <div class="modal">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/XG_LLOXELFI?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
     <section class="row middle-xs infoSection">
       <div class="col-sm-2 top-sm">
         <img src="./public/assets/svg/line-5.svg" alt="Linea" />
@@ -421,7 +444,7 @@
         </div>
       </div>
     </section>
-    <section class="row middle-xs infoSection">
+    <section class="row middle-xs infoSection colorless">
       <div class="col-sm-6 top-sm">
         <img src="./public/assets/svg/line-4.svg" alt="Linea" />
       </div>
@@ -431,6 +454,7 @@
           Nos encanta estar en contacto contigo, es por esto queremos contestar
           algunas de las inquietudes más comunes.
         </p>
+        <p>Si tienes más preguntas escríbenos a: info@beboon.net</p>
       </div>
       <div class="col-sm-2 bottom-sm">
         <img src="./public/assets/svg/line-5.svg" alt="Linea" />
@@ -610,7 +634,7 @@
       <div class="row middle-xs bannerNewsletter__content">
         <div class="col-xs-12 col-md-6"></div>
         <div class="col-xs-12 col-md-6 center-xs">
-          <h3>Suscríbete a nuestro newsletter</h3>
+          <h3>Suscríbete a nuestro newsletter gratis</h3>
           <form class="formNewsletter" action="" method="post">
             <input type="text" placeholder="Tu nombre" />
             <input type="email" placeholder="Email" />
@@ -657,7 +681,7 @@
                   <a href="/beboon-page/productos.html">Productos</a>
                 </li>
                 <li>
-                  <a href="/beboon-page/quienes-somos.html">Beboon</a>
+                  <a href="/beboon-page/quienes-somos.html">BeBoon</a>
                 </li>
                 <li>
                   <a href="/beboon-page/patricia.html">Dr. Patricia Restrepo</a>
@@ -700,7 +724,7 @@
               href="https://www.instagram.com/beboon.health/"
               target="_blank"
               rel="noopener noreferrer"
-              >Instagram Dr. Patricia</a
+              ><img src="./public/assets/svg/instagram.svg" alt="Instagram" />Instagram Dr. Patricia</a
             >
           </div>
           <div class="col-xs-12">
@@ -708,7 +732,10 @@
               href="https://www.instagram.com/beboon.health/"
               target="_blank"
               rel="noopener noreferrer"
-              >Instagram BeBoon</a
+              ><img
+                src="./public/assets/svg/instagram.svg"
+                alt="Instagram"
+              />Instagram BeBoon</a
             >
           </div>
           <div class="col-xs-12">
@@ -716,7 +743,7 @@
               href="https://www.facebook.com/beboon.health"
               target="_blank"
               rel="noopener noreferrer"
-              >Facebook</a
+              ><img src="./public/assets/svg/facebook.svg" alt="Facebook">Facebook</a
             >
           </div>
           <div class="col-xs-12">
@@ -724,7 +751,7 @@
               href="https://www.linkedin.com/company/beboon/about/"
               target="_blank"
               rel="noopener noreferrer"
-              >Linkedin</a
+              ><img src="./public/assets/svg/linkedin.svg" alt="Linkedin">Linkedin</a
             >
           </div>
           <div class="col-xs-12">
@@ -732,7 +759,7 @@
               href="https://www.youtube.com/c/DrPatriciaRestrepo"
               target="_blank"
               rel="noopener noreferrer"
-              >Youtube</a
+              ><img src="./public/assets/svg/youtube.svg" alt="Youtube">Youtube</a
             >
           </div>
           <div class="col-xs-12">
@@ -740,7 +767,7 @@
               href="https://open.spotify.com/show/7r2POO8Dywl4imxizBRwJ9"
               target="_blank"
               rel="noopener noreferrer"
-              >Spotify</a
+              ><img src="./public/assets/svg/spotify.svg" alt="Spotify">Spotify</a
             >
           </div>
         </div>
