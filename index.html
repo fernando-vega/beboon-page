@@ -165,7 +165,7 @@
               >Más videos</a
             >
           </div>
-          <div class="col-sm-8 end-xs video-container">
+          <div class="col-sm-8 center-xs end-sm video-container">
             <iframe
               frameborder="0"
               scrolling="no"
@@ -191,9 +191,6 @@
           y aplicable.
         </h3>
         <p>Recibe información que te acopañará en tu proceso de sanación</p>
-        <ul class="row">
-          <li>Programas</li>
-        </ul>
       </div>
       <div class="col-xs-1 col-sm-2 bottom-sm">
         <img src="./public/assets/svg/line-3.svg" alt="Linea" />
@@ -204,11 +201,11 @@
         <div class="leftSection firstSection cardText">
           <h3>Membresía</h3>
           <p>
-            Queremos que te sientas en un lugar<br />seguro en la busqueda de
-            mejorar tu salud
+            Estamos creando las herramientas para que puedas aprender a crear tu propia salud. Próximamente, podrás formar parte de nuestro selecto grupo de miembros, vas a recibir información de primera mano para encontrar tu proceso de sanación y vivir plenamente a través de tus hábitos y decisiones saludables.  Déjanos tus datos y te mantendremos al tanto de las novedades que tenemos para ti.
           </p>
           <ul>
             <li>Información actualizada.</li>
+            <li>Master class especializada</li>
             <li>Health Challenge mensual</li>
             <li>Webinar en vivo</li>
           </ul>
@@ -231,16 +228,18 @@
       </section>
       <section class="offsetGrid container">
         <div class="leftSection cardImg">
-          <img
-            class="cardImg__background"
-            src="./public/images/img_4.png"
-            alt="Manos"
-          />
-          <img
-            class="cardImg__line lineRight"
-            src="./public/assets/svg/line-women.svg"
-            alt="Corazón"
-          />
+          <div class="wrapImages">
+            <img
+              class="cardImg__background"
+              src="./public/images/img_4.png"
+              alt="Manos"
+            />
+            <img
+              class="cardImg__line lineRight"
+              src="./public/assets/svg/line-women.svg"
+              alt="Corazón"
+            />
+          </div>
         </div>
         <div class="rightSection cardText">
           <h3>Cursos cortos</h3>
@@ -311,7 +310,7 @@
         </div>
       </div>
     </section>
-    <div class="modal">
+    <div class="modal modal-historia">
       <div class="modal__content">
         <div class="modal__close closeModal">
           <img src="./public/assets/svg/close.svg" alt="Close" />
@@ -337,7 +336,7 @@
       <div class="col-sm-4 middle-xs infoSection__text">
         <h3>Conoces los cursos</h3>
         <p>
-          Cursos desarrollados con una metodologíafácil y progresiva basada en
+          Cursos desarrollados con una metodología fácil y progresiva basada en
           accionables. ¡Solo necesita cambiar para sanar!
         </p>
       </div>
@@ -351,26 +350,17 @@
           <div class="video__item col-xs-12 col-sm-6">
             <div class="video__item__wrapCover">
               <img src="./public/images/img_7.png" alt="cover video" />
-              <span class="playBtn"></span>
+              <span class="playBtn openModalV1"></span>
             </div>
             <h3>No puedo ir al baño y eso no es normal</h3>
-            <a
-              href="https://youtu.be/H4EjeqwegAQ"
-              target="_blank"
-              class="video__item__btnWhite"
-              >Ver trailer</a
-            >
             <a class="video__item__btnOrange">Ir al curso</a>
           </div>
           <div class="video__item col-xs-12 col-sm-6">
             <div class="video__item__wrapCover">
               <img src="./public/images/img_8.png" alt="cover video" />
-              <span class="playBtn"></span>
+              <span class="playBtn openModalV2"></span>
             </div>
             <h3>Vivo cansado y eso no es normal</h3>
-            <a href="https://youtu.be/4xeNLsAmTSc" class="video__item__btnWhite"
-              >Ver trailer</a
-            >
             <a class="video__item__btnOrange">Ir al curso</a>
           </div>
         </div>
@@ -383,6 +373,44 @@
         >
       </div>
     </section>
+    <div class="modal modal-video-1">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/H4EjeqwegAQ?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-video-2">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/4xeNLsAmTSc?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
     <section class="bannerInfoHome2">
       <div class="row center-xs middle-xs">
         <div class="bannerInfoHome2__content">
@@ -471,14 +499,19 @@
             </div>
             <div class="faq-answer">
               <div class="faq-answer-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit hic, dolores magnam provident atque aliquam accusamus
-                earum nihil magni minima. Modi accusantium nemo dolore ipsam
-                voluptates expedita culpa cupiditate reprehenderit. Rem
-                laudantium, laboriosam eius iusto vitae cum porro veniam
-                mollitia alias, itaque modi nostrum quos numquam voluptas fugit
-                temporibus magni quisquam optio vero error odit deserunt autem.
-                Fugiat, aliquam ullam.
+                Tenemos el PDF que describe todo lo que inluye que tal insertarlo aca y ponerlo como descargable.
+              </div>
+            </div>
+          </div>
+          <div class="faq-container">
+            <div class="faq-label">
+              <span class="faq-line"></span>
+              <div class="faq-label-text">¿Cuánto tiempo dura la consulta?</div>
+              <div class="faq-label-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Es importante anotar que para la Dra. lo más importante más allá del tiempo es brindar una consulta de calidad.  Sin embargo, por lo general, la  primera consulta dura aprox. 1 hora y las de seguimiento duran aprox. 45 min (puede ser  un poco más o menos dependiendo del caso individual).
               </div>
             </div>
           </div>
@@ -490,37 +523,7 @@
             </div>
             <div class="faq-answer">
               <div class="faq-answer-content">
-                En lugar de darte una dieta, lo que hacemos es ayudarte a
-                cambiar tu forma de alimentarte, a largo plazo y sin que te
-                sientas restringido, sin que pases hambre. No usamos un sólo
-                tipo de alimentación, porque cada persona necesita soluciones
-                distintas, incluso una misma persona puede necesitar
-                alimentación distinta de acuerdo al momento de vida que está
-                pasando. La idea es aprender a comer los alimentos que ayudan a
-                que tu cuerpo funcione magníficamente, de acuerdo a los miles (o
-                millones) de años que lleva en evolución, y aprender a
-                seleccionar los ingredientes de mejor calidad, los horarios que
-                más te convienen, las preparaciones y combinaciones que te
-                convienen, etc.
-              </div>
-            </div>
-          </div>
-          <div class="faq-container">
-            <div class="faq-label">
-              <span class="faq-line"></span>
-              <div class="faq-label-text">¿Es dieta Keto?</div>
-              <div class="faq-label-icon">+</div>
-            </div>
-            <div class="faq-answer">
-              <div class="faq-answer-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit hic, dolores magnam provident atque aliquam accusamus
-                earum nihil magni minima. Modi accusantium nemo dolore ipsam
-                voluptates expedita culpa cupiditate reprehenderit. Rem
-                laudantium, laboriosam eius iusto vitae cum porro veniam
-                mollitia alias, itaque modi nostrum quos numquam voluptas fugit
-                temporibus magni quisquam optio vero error odit deserunt autem.
-                Fugiat, aliquam ullam.
+                El énfasis no es la dieta. Partimos de la persona, su momento actual y, en qué dirección debemos movernos y cuál es la meta . La generalidad es trabajar con comida real vs procesada y, podriamos decir que siempre estamos buscando alimentar la microbiota y proteger el hígado. Sobre estos principios creamos la recomendacion individual, caso a caso.
               </div>
             </div>
           </div>
@@ -528,20 +531,13 @@
             <div class="faq-label">
               <span class="faq-line"></span>
               <div class="faq-label-text">
-                ¿Para qué se toman los suplementos?
+                ¿Es dieta Keto?
               </div>
               <div class="faq-label-icon">+</div>
             </div>
             <div class="faq-answer">
               <div class="faq-answer-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit hic, dolores magnam provident atque aliquam accusamus
-                earum nihil magni minima. Modi accusantium nemo dolore ipsam
-                voluptates expedita culpa cupiditate reprehenderit. Rem
-                laudantium, laboriosam eius iusto vitae cum porro veniam
-                mollitia alias, itaque modi nostrum quos numquam voluptas fugit
-                temporibus magni quisquam optio vero error odit deserunt autem.
-                Fugiat, aliquam ullam.
+                No. La dieta keto no es para todos los cuerpos y puede ser riesgoso prolongarla, además de que muchas personas hacen una versión muy poco saludable de la dieta keto y así dañan su metabolismo. En beboon en lugar de darte una dieta genérica (como la dieta keto), te ayudamos a cambiar tu alimentación y tu estilo de vida a largo plazo, tomando en cuenta tu individualidad, tu historia de salud, tus objetivos, tus síntomas diarios, etc.
               </div>
             </div>
           </div>
@@ -549,26 +545,61 @@
             <div class="faq-label">
               <span class="faq-line"></span>
               <div class="faq-label-text">
-                Me estoy sientiendo más inflamada ahora que tomo suplementos
+                ¿La doctora ve puros temas estomacales o también otro tipo de temas?
               </div>
               <div class="faq-label-icon">+</div>
             </div>
             <div class="faq-answer">
               <div class="faq-answer-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit hic, dolores magnam provident atque aliquam accusamus
-                earum nihil magni minima. Modi accusantium nemo dolore ipsam
-                voluptates expedita culpa cupiditate reprehenderit. Rem
-                laudantium, laboriosam eius iusto vitae cum porro veniam
-                mollitia alias, itaque modi nostrum quos numquam voluptas fugit
-                temporibus magni quisquam optio vero error odit deserunt autem.
-                Fugiat, aliquam ullam.
+                En todos los casos se mira la salud digestiva ya que la salud o la enfermedad siempre  tienen un componente digestivo.
+              </div>
+            </div>
+          </div>
+          <div class="faq-container">
+            <div class="faq-label">
+              <span class="faq-line"></span>
+              <div class="faq-label-text">
+                ¿Qué es eso de parámetros?
+              </div>
+              <div class="faq-label-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Parámetros es medición; aquí incluimos las señales que el cuerpo envía, la manera cómo la registra cada cuerpo, tiempos, intensidad, frecuencia, sintonía....Esto es la forma como la persona vive, y se comunica con el cuerpo. También se cotejan con las medidas objetivas, métricas y númericas que nos da el laboratorio y las pruebas científicas especiales, de acuerdo al caso.
+              </div>
+            </div>
+          </div>
+          <div class="faq-container">
+            <div class="faq-label">
+              <span class="faq-line"></span>
+              <div class="faq-label-text">
+                ¿Se puede pagar con tarjeta de crédito?
+              </div>
+              <div class="faq-label-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Si se puede pagar con tarjeta. Claro que estamos sujetos a las limitaciones y/o facilidades que da la tarjeta y el país de origen.
+              </div>
+            </div>
+          </div>
+          <div class="faq-container">
+            <div class="faq-label">
+              <span class="faq-line"></span>
+              <div class="faq-label-text">
+                ¿Cuándo y cómo me debo tomar los suplementos?
+              </div>
+              <div class="faq-label-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Según lo indicado en el protocolo por la Dra.  Ver articulo del blog: <a href="https://www.beboon.net/2021/07/al-comprar-un-suplemento-que-es-importante-tener-en-cuenta/" target="_blank"></a> https://www.beboon.net/2021/07/al-comprar-un-suplemento-que-es-importante-tener-en-cuenta/
               </div>
             </div>
           </div>
         </div>
         <div class="row center-xs col-xs-12">
-          <button class="btnPrimary btnWhite__border">Cargas más</button>
+          <button class="btnPrimary btnWhite__border">Ver más</button>
         </div>
       </div>
     </section>
@@ -578,15 +609,41 @@
           <div class="slide-wrap">
             <div class="item">
               <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
+                <div class="video__item__wrapCover image">
+                  <img src="https://img.youtube.com/vi/SfBhAALGhLw/0.jpg" alt="cover video" />
+                  <span class="playBtn openModalT" data-videoId="1"></span>
                 </div>
                 <div class="text">
                   <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
+                    Me di cuenta que no es exagerar, debe ser lo normal. Por lo menos un 75%  de la comida diaria debería estar basada en verduras.
+                    <small>Andrés Ramírez</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials__grid">
+                <div class="video__item__wrapCover image">
+                  <img src="https://img.youtube.com/vi/pOYTu4cZdi4/0.jpg" alt="cover video" />
+                  <span class="playBtn openModalT" data-videoId="2"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    Comencé la Dra. Patricia Restrepo y todo me hizo sentido desde la primera cita, cuando ella empieza a preguntar entendí que lo norma es sentirte bien y escuchar el cuerpo.
+                    <small>Claudia Pachón</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials__grid">
+                <div class="video__item__wrapCover image">
+                  <img src="https://img.youtube.com/vi/voE_o88X2Lw/0.jpg" alt="cover video" />
+                  <span class="playBtn openModalT" data-videoId="3"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    Es muy noble curar con comida y suplementos. Dedicarle tiempo a la alimentación ha sido muy efectiva a largo plazo.
                     <small>Dominika</small>
                   </p>
                 </div>
@@ -594,32 +651,14 @@
             </div>
             <div class="item">
               <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
+                <div class="video__item__wrapCover image">
+                  <img src="https://img.youtube.com/vi/r0JK0y0MpKI/0.jpg" alt="cover video" />
+                  <span class="playBtn openModalT" data-videoId="4"></span>
                 </div>
                 <div class="text">
                   <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
-                    <small>Dominika</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials__grid">
-                <div class="image">
-                  <img src="./public/images/img_16.png" alt="" />
-                </div>
-                <div class="text">
-                  <p>
-                    Me ayuda a lidiar con mi adicción al azúcar y me llena de
-                    conocimiento e información que su médico habitual no le está
-                    diciendo ¡Cambian las Dominika reglas del juego de
-                    bienestar!
-                    <small>Dominika</small>
+                    Los efectos son increíbles, duermo 7 horas, no me enfermo de gripe. Mi sistema inmunológico está muy fuerte.
+                    <small>Gladis</small>
                   </p>
                 </div>
               </div>
@@ -630,6 +669,82 @@
         </div>
       </div>
     </section>
+    <div class="modal modal-video-t-1">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/SfBhAALGhLw?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-video-t-2">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/pOYTu4cZdi4?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-video-t-3">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/voE_o88X2Lw?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-video-t-4">
+      <div class="modal__content">
+        <div class="modal__close closeModal">
+          <img src="./public/assets/svg/close.svg" alt="Close" />
+        </div>
+        <div class="modal__text">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            width="90%"
+            height="90%"
+            type="text/html"
+            src="https://www.youtube.com/embed/r0JK0y0MpKI?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"
+          ></iframe>
+        </div>
+      </div>
+    </div>
     <section class="bannerNewsletter">
       <div class="row middle-xs bannerNewsletter__content">
         <div class="col-xs-12 col-md-6"></div>

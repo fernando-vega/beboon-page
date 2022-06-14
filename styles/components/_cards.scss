@@ -149,6 +149,14 @@
 .leftSection {
   @include for-notebook-landscape-up {
     grid-area: 1 / 1 / 5 / 4;
+
+    p {
+      padding-right: 25% !important;
+    }
+
+    .wrapImages {
+      position: relative;
+    }
   }
 }
 .rightSection {
@@ -430,24 +438,13 @@
   width: 100%;
   z-index: 1;
   &__grid {
-    display: flex;
-    @include for-notebook-landscape-up {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 0px 0px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: block;
+    @include for-tablet-portrait-up {
+      display: flex;
     }
     .image {
       z-index: 2;
-      @include for-notebook-landscape-up {
-        grid-area: 1 / 1 / 4 / 5;
-      }
-
-      @include for-phone-only {
-        display: none;
-      }
+      width: 100%;
 
       img {
         object-fit: cover;
@@ -457,14 +454,9 @@
     }
     .text {
       background-color: $-orange;
-      padding: 0 30px;
+      padding: 30px;
       position: relative;
       z-index: 2;
-      @include for-notebook-landscape-up {
-        grid-area: 2 / 4 / 5 / 10;
-        padding-left: 25%;
-        z-index: 1;
-      }
       p {
         color: $-white;
         display: flex;

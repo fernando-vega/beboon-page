@@ -1,9 +1,6 @@
 .subscription {
   background: url('../../public/images/m_img_7.png') center no-repeat;
   background-size: cover;
-  @include for-notebook-landscape-up {
-    height: 250px;
-  }
   &__item {
     padding: $-padding;
     &__circle {
@@ -17,7 +14,7 @@
       position: relative;
       width: 200px;
       h4 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       small {
         font-size: 15px;
