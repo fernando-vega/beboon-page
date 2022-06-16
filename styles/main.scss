@@ -83,7 +83,7 @@ body {
   }
   &.programas {
     height: 100%;
-    margin-top: 100vh;
+    margin-top: 95vh;
     @include for-notebook-landscape-up {
       margin-top: 120vh;
     }
@@ -128,14 +128,18 @@ body {
       width: 50%;
 
       &.full-width {
-        width: 95%;
-        padding: $-padding * 2 $-padding;
+        width: inherit;
+        padding: $-padding;
+        @include for-notebook-landscape-up {
+          padding: $-padding * 2 $-padding;
+          width: 95%;
+        }
       }
     }
   }
   &.patricia {
     height: max-content;
-    margin-top: 110vh;
+    margin-top: 95vh;
     padding-bottom: 50px;
     &::after {
       display: none;
@@ -159,8 +163,12 @@ body {
       width: 50%;
 
       &.full-width {
-        width: 95%;
-        padding: $-padding * 2 $-padding;
+        width: inherit;
+        padding: $-padding;
+        @include for-notebook-landscape-up {
+          padding: $-padding * 2 $-padding;
+          width: 95%;
+        }
       }
     }
   }

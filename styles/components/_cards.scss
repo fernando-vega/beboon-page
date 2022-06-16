@@ -36,7 +36,7 @@
     h2 {
       color: $-orange;
       font-size: 2.5rem;
-      margin: $-padding * 2 0;
+      margin: $-padding * 2 $-padding;
 
       @include for-phone-only {
         font-size: 2rem;
@@ -101,7 +101,7 @@
 
 .offsetGrid {
   gap: 0px 0px;
-  margin-bottom: 0;
+  margin-bottom: $-padding;
   padding-top: $-padding * 2;
   position: relative;
   z-index: 2;
@@ -169,7 +169,7 @@
   background-color: $-orange-light;
   padding: $-padding * 2;
   color: $-orange;
-  margin: $-padding;
+  margin: 0 $-padding;
 
   @include for-notebook-landscape-up {
     padding: $-padding * 2 $-padding * 4;
@@ -192,6 +192,7 @@
 
   ul {
     font-style: italic;
+    font-size: 23px;
     list-style-image: url("../../public/assets/svg/line-list.svg");
     padding-left: $-padding;
     width: 60%;
@@ -211,8 +212,10 @@
       background-color: $-orange;
       color: $-white;
       font-size: 2rem;
-      padding: $-padding * 2;
+      padding: $-padding * 2 0;
+      text-align: center;
       @include for-notebook-landscape-up {
+        text-align: initial;
         padding: $-padding * 3.45 $-padding $-padding 40%;
         width: 58%;
       }
@@ -269,12 +272,15 @@
 
 .cardImg {
   position: relative;
-  margin: $-padding;
+  margin: -15px $-padding;
 
   iframe {
-    margin: 5%;
     min-height: 280px;
-    width: 90%;
+    width: 100%;
+    @include for-notebook-landscape-up {
+      margin: 5%;
+      width: 90%;
+    }
   }
   &__background {
     height: auto;
@@ -514,6 +520,7 @@
       }
     }
     &__image {
+      margin-bottom: -5px;
       @include for-notebook-landscape-up {
         grid-area: 1 / 3 / 6 / 6;
       }
@@ -612,6 +619,7 @@
 
   ul {
     font-style: italic;
+    font-size: 23px;
     list-style-image: url("../../public/assets/svg/line-list.svg");
     padding: $-padding 0 $-padding $-padding;
     li {

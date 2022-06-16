@@ -52,35 +52,48 @@ function init() {
   }
 
   // event
-  menu.addEventListener("click", toggleMenu, false);
-  modal.addEventListener("click", toggleModal, false);
-  modalV1.addEventListener("click", toggleModalV1, false);
-  modalV2.addEventListener("click", toggleModalV2, false);
-  closeModal.forEach((item) => {
-    item.addEventListener(
-      "click",
-      () => {
-        item.parentElement.parentElement.classList.remove("active");
-        document.querySelector("body").classList.remove("isActive");
-      },
-      false
-    );
-  });
-
-  modalT.forEach((videoId) => {
-    videoId.addEventListener("click", function () {
-      let videoId = this.getAttribute("data-videoId");
-      toggleModalT(event, videoId), false;
+  if (menu) {
+    menu.addEventListener("click", toggleMenu, false);
+  }
+  if (modal) {
+    modal.addEventListener("click", toggleModal, false);
+  }
+  if (modalV1) {
+    modalV1.addEventListener("click", toggleModalV1, false);
+  }
+  if (modalV2) {
+    modalV2.addEventListener("click", toggleModalV2, false);
+  }
+  if (closeModal) {
+    closeModal.forEach((item) => {
+      item.addEventListener(
+        "click",
+        () => {
+          item.parentElement.parentElement.classList.remove("active");
+          document.querySelector("body").classList.remove("isActive");
+        },
+        false
+      );
     });
-  });
+  }
+
+  if (modalT) {
+    modalT.forEach((videoId) => {
+      console.log(videoId);
+      videoId.addEventListener("click", function () {
+        let videoId = this.getAttribute("data-videoId");
+        toggleModalT(event, videoId), false;
+      });
+    });
+  }
 }
 
-let testimonialHeight = document.querySelector(
-  ".testimonials__grid"
-).clientHeight;
+let testimonialHeight = document.querySelector(".testimonials__grid");
 
-let sliderTestimodials = document.querySelector(".slider");
-sliderTestimodials.style.height = testimonialHeight + 50 + "px";
+if (testimonialHeight) {
+  let sliderTestimodials = document.querySelector(".slider");
+  sliderTestimodials.style.height = testimonialHeight.clientHeight + 50 + "px";
+}
 
 let arrowIconLeft =
   '<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC \'-//W3C//DTD SVG 1.1//EN\'  \'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\'><svg height="40px" id="Layer_1" style="enable-background:new 0 0 40 40;" version="1.1" viewBox="0 0 512 512" width="40px" color="#f15f24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg>';
@@ -90,9 +103,11 @@ let slideSayisi = slides.length;
 
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
-prev.innerHTML = arrowIconLeft;
-next.innerHTML = arrowIconLeft;
-next.querySelector("svg").style.transform = "rotate(180deg)";
+if (prev && next) {
+  prev.innerHTML = arrowIconLeft;
+  next.innerHTML = arrowIconLeft;
+  next.querySelector("svg").style.transform = "rotate(180deg)";
+}
 
 for (let index = 0; index < slides.length; index++) {
   const element = slides[index];
@@ -117,13 +132,14 @@ function goPrev() {
       "translateX(" + 100 * (index - (loop % slideSayisi)) + "%)";
   }
 }
-
-next.addEventListener("click", goNext);
-prev.addEventListener("click", goPrev);
-document.addEventListener("keydown", function (e) {
-  if (e.code === "ArrowRight") {
-    goNext();
-  } else if (e.code === "ArrowLeft") {
-    goPrev();
-  }
-});
+if (prev && next) {
+  next.addEventListener("click", goNext);
+  prev.addEventListener("click", goPrev);
+  document.addEventListener("keydown", function (e) {
+    if (e.code === "ArrowRight") {
+      goNext();
+    } else if (e.code === "ArrowLeft") {
+      goPrev();
+    }
+  });
+}

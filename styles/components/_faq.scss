@@ -5,7 +5,10 @@
   height: auto;
 
   &.preguntas-frecuentes {
-    margin-top: 80vh;
+    margin-top: 95vh;
+    @include for-notebook-landscape-up {
+      margin-top: 85vh;
+    }
   }
 }
 
@@ -52,9 +55,14 @@
 }
 
 .faq-answer-content {
-  padding: 10px 0 10px $-padding;
+  padding: 10px $-padding;
+  text-align: justify;
   font-size: 1.2rem;
   font-style: italic;
+
+  strong {
+    font-weight: 700;
+  }
 }
 
 .active {

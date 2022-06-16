@@ -172,8 +172,8 @@
   }
 }
 .headerBackground {
-  background: url("../../public/images/img_home.jpg") no-repeat center;
-  background-position-x: 35%;
+  background: url("../../public/images/banner-home.png") no-repeat center;
+  background-position-x: 25%;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -192,7 +192,7 @@
   &::before {
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 0.8) 100%
     );
     content: "";
@@ -204,14 +204,14 @@
   }
   &.membresia {
     background: url("../../public/images/m_img_1.png") no-repeat;
-    background-position-x: 65%;
     background-size: cover;
     @include for-notebook-landscape-up {
       background-position: center;
     }
   }
   &.cursos {
-    background: url("../../public/images/c_img_1.png") no-repeat center;
+    background: url("../../public/images/c_img_1.png") no-repeat;
+    background-position-x: 68%;
     background-size: cover;
   }
   &.programas {
@@ -220,7 +220,7 @@
   }
   &.asesorias {
     background: url("../../public/images/a_img_1.png") no-repeat;
-    background-position-x: 65%;
+    background-position-x: 58%;
     background-size: cover;
     @include for-notebook-landscape-up {
       background-position: center;
@@ -244,7 +244,8 @@
     }
   }
   &.blog {
-    background: url("../../public/images/beboon-banner-recursos.jpg") no-repeat center;
+    background: url("../../public/images/beboon-banner-recursos.jpg") no-repeat
+      center;
     background-position-x: 65%;
     background-size: cover;
     height: 120px;
@@ -265,7 +266,7 @@
 
   &.quienes-somos {
     background: url("../../public/images/bb_img_1.png") no-repeat center;
-    background-position-x: 65%;
+    background-position-x: 15%;
     background-size: cover;
     @include for-notebook-landscape-up {
       background-position: center;
@@ -302,8 +303,10 @@
 
     &.leftSection {
       right: initial;
+      padding: 0 15px;
 
       @include for-notebook-landscape-up {
+        padding: initial;
         left: 16vw;
       }
       .img {
@@ -314,6 +317,10 @@
     &__title {
       font-size: 2.3rem;
       width: 100%;
+
+      span {
+        font-weight: 300;
+      }
 
       @include for-notebook-landscape-up {
         width: 95%;

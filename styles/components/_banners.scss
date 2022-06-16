@@ -1,6 +1,7 @@
 .bannerInfoHome {
   margin: 0;
-  background: url("../../public/images/img_6.png") no-repeat center;
+  background: url("../../public/images/img_6.png") no-repeat;
+  background-position-x: 80%;
   background-size: cover;
   height: 600px;
   position: relative;
@@ -128,7 +129,7 @@
 }
 
 .bannerNewsletter {
-  background: url("../../public/images/img_17.png") no-repeat;
+  background: url("../../public/images/newsletter.jpg") no-repeat;
   background-position: 15%;
   background-size: cover;
   color: $-white;
