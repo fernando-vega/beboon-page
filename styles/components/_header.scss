@@ -181,8 +181,16 @@
   top: 0;
   width: 100%;
 
+  &__home {
+    top: 80%;
+  }
+
   &__text {
     width: 95%;
+
+    strong {
+      font-weight: 700;
+    }
   }
 
   @include for-notebook-landscape-up {
@@ -270,6 +278,14 @@
     background-size: cover;
     @include for-notebook-landscape-up {
       background-position: center;
+    }
+  }
+
+  &.post {
+    background: $-orange;
+
+    &::before {
+      background: none;
     }
   }
 

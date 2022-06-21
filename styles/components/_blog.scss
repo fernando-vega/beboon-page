@@ -6,6 +6,13 @@
     width: calc(100% - 40px);
   }
 
+  &__title {
+    color: $-orange;
+    font-size: 23px;
+    margin-top: $-padding * 4;
+    text-align: center;
+  }
+
   img {
     margin-top: 40px;
   }
@@ -15,12 +22,19 @@
   }
 
   &__orange {
+    align-items: center;
     background-color: $-orange;
     color: $-white;
-    padding: 26px 0;
+    display: flex;
+    justify-content: center;
+    padding: 26px $-padding / 2;
     h4 {
       font-weight: 300;
+      font-size: 16px;
+      overflow: hidden;
       text-transform: uppercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 
@@ -56,4 +70,52 @@
     text-align: start;
     width: calc(100% - 40px);
   }
+}
+
+.post-content {
+  position: relative;
+  margin-top: 15vh;
+
+  &__title {
+    color: $-white;
+    margin: $-padding * 2 0;
+    text-align: center;
+
+    h1 {
+      font-size: 35px;
+    }
+    span {
+      font-size: 23px;
+    }
+  }
+
+  &__image {
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 60vh;
+      width: auto;
+    }
+  }
+
+  &__description {
+    font-size: 23px;
+    line-height: 1.4em;
+    margin: $-padding 0;
+    padding: $-padding;
+
+    h2 {
+      color: $-orange;
+      font-size: 38px;
+      margin: $-padding * 2 0;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
 }

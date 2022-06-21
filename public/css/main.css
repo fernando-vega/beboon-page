@@ -1440,6 +1440,12 @@ meter {
   margin: auto;
   width: calc(100% - 40px);
 }
+.wrapBlog__title {
+  color: #F15F24;
+  font-size: 23px;
+  margin-top: 60px;
+  text-align: center;
+}
 .wrapBlog img {
   margin-top: 40px;
 }
@@ -1447,13 +1453,26 @@ meter {
   margin-top: -5px;
 }
 .wrapBlog__orange {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F15F24;
   color: #FDF6EF;
-  padding: 26px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 26px 7.5px;
 }
 .wrapBlog__orange h4 {
   font-weight: 300;
+  font-size: 16px;
+  overflow: hidden;
   text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .wrapBlog__header {
   background-color: rgba(241, 95, 36, 0.1);
@@ -1485,6 +1504,52 @@ meter {
   margin: auto;
   text-align: start;
   width: calc(100% - 40px);
+}
+
+.post-content {
+  position: relative;
+  margin-top: 15vh;
+}
+.post-content__title {
+  color: #FDF6EF;
+  margin: 30px 0;
+  text-align: center;
+}
+.post-content__title h1 {
+  font-size: 35px;
+}
+.post-content__title span {
+  font-size: 23px;
+}
+.post-content__image {
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.post-content__image img {
+  max-height: 60vh;
+  width: auto;
+}
+.post-content__description {
+  font-size: 23px;
+  line-height: 1.4em;
+  margin: 15px 0;
+  padding: 15px;
+}
+.post-content__description h2 {
+  color: #F15F24;
+  font-size: 38px;
+  margin: 30px 0;
+}
+.post-content__description strong {
+  font-weight: 700;
 }
 
 .btnPrimary {
@@ -2637,8 +2702,14 @@ meter {
   top: 0;
   width: 100%;
 }
+.headerBackground__home {
+  top: 80%;
+}
 .headerBackground__text {
   width: 95%;
+}
+.headerBackground__text strong {
+  font-weight: 700;
 }
 @media (min-width: 1024px) {
   .headerBackground {
@@ -2734,6 +2805,12 @@ meter {
   .headerBackground.quienes-somos {
     background-position: center;
   }
+}
+.headerBackground.post {
+  background: #F15F24;
+}
+.headerBackground.post::before {
+  background: none;
 }
 .headerBackground__line {
   left: 0px;
@@ -3379,7 +3456,7 @@ body p {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-top: 95vh;
+  margin-top: 115vh;
   padding-bottom: 50px;
 }
 .orangeSection-large.patricia::after {
@@ -3392,11 +3469,11 @@ body p {
   font-style: italic;
   font-size: 1rem;
   font-weight: 300;
-  margin: 15px 0 15px 0;
+  margin: 15px 0 15px 15px;
   width: 100%;
 }
 .orangeSection-large.patricia .rightSection ul li {
-  list-style: inside;
+  list-style: outside;
   padding: 0 15px 0 0;
   margin: 0;
 }
