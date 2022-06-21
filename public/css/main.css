@@ -2352,6 +2352,12 @@ meter {
 .faqSection.preguntas-frecuentes {
   margin-top: 95vh;
 }
+.faqSection.preguntas-frecuentes h1 {
+  color: #F15F24;
+  font-size: 30px;
+  margin: 30px 0;
+  padding: 0 20px;
+}
 @media (min-width: 1024px) {
   .faqSection.preguntas-frecuentes {
     margin-top: 85vh;
@@ -2787,7 +2793,7 @@ meter {
   }
 }
 .headerBackground.preguntas-frecuentes {
-  background: url("../../public/images/p-r.jpg") no-repeat center;
+  background: url("../../public/images/p&r.jpg") no-repeat center;
   background-position-x: 65%;
   background-size: cover;
 }
